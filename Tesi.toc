@@ -1,0 +1,11 @@
+\babel@toc {italian}{}\relax 
+\babel@toc {italian}{}\relax 
+\contentsline {chapter}{Introduzione}{1}{chapter*.5}%
+\contentsline {chapter}{\numberline {1}Il progetto e il suo sviluppo}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Database}{5}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Progettazione}{5}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Scrittura nel linguaggio SQL}{6}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Interrogazioni al Database}{9}{subsection.1.1.3}%
+\contentsline {chapter}{Conclusione}{11}{chapter*.7}%
+\contentsline {chapter}{Bibliografia}{13}{chapter*.7}%
+\contentsline {chapter}{\numberline {A}Appendice di Esempio}{17}{appendix.Alph1}%

@@ -1,0 +1,37 @@
+\begin{thebibliography}{}
+
+\bibitem[Allen and Zilberstein, 2009]{allen2009complexity}
+Allen, M. and Zilberstein, S. (2009).
+\newblock Complexity of decentralized control: Special cases.
+\newblock In {\em 23rd Annual Conference on Neural Information Processing
+  Systems 2009, 7-10 December , Vancouver, British Columbia, Canada}, pages
+  19--27. Curran Associates, Inc.
+
+\bibitem[Bernstein et~al., 2002]{bernstein2002complexity}
+Bernstein, D.~S., Givan, R., Immerman, N., and Zilberstein, S. (2002).
+\newblock The complexity of decentralized control of markov decision processes.
+\newblock {\em Mathematics of operations research}, 27(4):819--840.
+
+\bibitem[De~Weerdt et~al., 2003]{de2003resource}
+De~Weerdt, M., Bos, A., Tonino, H., and Witteveen, C. (2003).
+\newblock A resource logic for multi-agent plan merging.
+\newblock {\em Annals of Mathematics and Artificial Intelligence},
+  37(1-2):93--130.
+
+\bibitem[Durfee, 2001]{durfee1999distributed}
+Durfee, E.~H. (2001).
+\newblock {\em Distributed Problem Solving and Planning}, pages 118--149.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg.
+
+\bibitem[Gelfond and Lifschitz, 1998]{gelfond1998action}
+Gelfond, M. and Lifschitz, V. (1998).
+\newblock Action languages.
+\newblock {\em Electron. Trans. Artif. Intell.}, 2:193--210.
+
+\bibitem[Russell and Norvig, 2010]{modernApproach}
+Russell, S.~J. and Norvig, P. (2010).
+\newblock {\em Artificial Intelligence - {A} Modern Approach, Third
+  International Edition}.
+\newblock Pearson Education.
+
+\end{thebibliography}

@@ -1,0 +1,157 @@
+\documentclass{theme/uniprthesis}
+
+%%%%%%%%%%%Some Extra Packages%%%%%%%%%%%
+\usepackage[italian]{babel}		% To have Italina names in Sections, Figures, Chapters etc.
+\usepackage{todonotes}			% To ease the revision
+
+\usepackage{blindtext} 			% Dummy Text - remove
+
+\usepackage{hyperref}			% link library
+\usepackage{listings}
+\usepackage{color}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%Custom%%%%%%%%%%%%%%%%%%%%%
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdfpagemode=FullScreen,
+    }
+
+\urlstyle{same}
+
+% SQL Sintax highlighting
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{1, 0.98, 0.98}
+\lstset{language=SQL,
+    backgroundcolor=\color{backcolour},
+    basicstyle={\small\ttfamily},
+    breakatwhitespace=false,
+    breaklines=true,
+    captionpos=b,
+    classoffset=0,
+    columns=flexible,
+    commentstyle=\color{dkgreen},
+    frameshape={}{}{}{}, %To remove to vertical lines on left, set `frameshape={}{}{}{}`
+    keepspaces=true,
+    keywordstyle=\color{blue},
+    numbers=left,                    
+    numbersep=5pt,    
+    numberstyle=\tiny\color{gray},
+    showstringspaces=false,
+    showspaces=false,
+    showtabs=false,
+    stringstyle=\color{mauve},
+    tabsize=2,
+}
+
+% Code Sintax highlighting
+% \definecolor{codegreen}{rgb}{0,0.6,0}
+% \definecolor{codegray}{rgb}{0.5,0.5,0.5}
+% \definecolor{codepurple}{rgb}{0.58,0,0.82}
+% \definecolor{backcolour}{rgb}{228, 228, 228}
+% \lstdefinestyle{mystyle}{
+%     backgroundcolor=\color{backcolour},   
+%     commentstyle=\color{codegreen},
+%     keywordstyle=\color{magenta},
+%     numberstyle=\tiny\color{codegray},
+%     stringstyle=\color{codepurple},
+%     basicstyle=\ttfamily\footnotesize,
+%     breakatwhitespace=false,         
+%     breaklines=true,                 
+%     captionpos=b,                    
+%     keepspaces=true,                 
+%     numbers=left,                    
+%     numbersep=5pt,                  
+%     showspaces=false,                
+%     showstringspaces=false,
+%     showtabs=false,                  
+%     tabsize=2
+% }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%% THESIS / TITLE PAGE INFORMATION
+% Everybody needs to complete the following:
+
+\title{Titolo in Italiano}
+\author{Dennis Turco}
+\advisor{Prof.\ Nome Cognome}
+\college{Dipartimento di Scienze Matematiche, Fisiche e Informatiche}
+\degree{Corso di Laurea [Triennale in Informatica]}
+\degreeyears{2020--2023}
+
+
+% Not mandatory fields
+\newcommand{\subTitle}{Titolo in Inglese} %Subtitle, usually the english version of the title
+
+%\newcommand{\advisorSecond}{Prof. Nome2 Cognome2} % For multiple (up to 4) advisors -- if this is not present then also the remaining ones are automatically omitted
+%\newcommand{\advisorThird}{Dott. Nome3 Cognome3} % For multiple (up to 4) advisors -- if this is not present then also the remaining ones are automatically omitted
+%\newcommand{\advisorFourth}{Dott. Nome4 Cognome4} % For multiple (up to 4) advisors
+
+\newcommand{\coadvisor}{Prof.\ co-Nome co-Cognome} %For multiple (up to 4) coadvisors -- if this is not present then also the remaining ones are automatically omitted
+\newcommand{\coadvisorSecond}{Prof.\ co-Nome2 co-Cognome2} % For multiple (up to 4) coadvisors -- if this is not present then also the remaining ones are automatically omitted
+%\newcommand{\coadvisorThird}{Dott. co-Nome3 co-Cognome3} % For multiple (up to 4) coadvisors -- if this is not present then also the remaining ones are automatically omitted
+%\newcommand{\coadvisorFourth}{Dott. co-Nome4 co-Cognome4} % For multiple (up to 4) coadvisors
+
+
+\begin{document}
+
+\maketitle
+
+%%%% La dedica
+\newpage
+\thispagestyle{empty}
+\null\vspace{\stretch{1}}
+\begin{flushright}
+	\textit{Dedica}
+\end{flushright}
+\vspace{\stretch{3}}\null
+\newpage
+
+%%%% Gli indici
+\pagestyle{plain}
+\pagenumbering{roman}
+\tableofcontents
+%
+\listoffigures    %Commentare se non vi sono Immagini
+\listofalgorithms %Commentare se non vi sono Algoritmi
+\listoftables     %Commentare se non vi sono Tabelle
+%
+%
+%
+%%%% La prefazione
+\include{Capitoli/Introduzione}
+%
+%%%% I Capitoli di Contenuto	
+\pagestyle{fancy}
+\include{Capitoli/Formattazione}
+\include{Capitoli/Background}
+\include{Capitoli/Obiettivi}
+\include{Capitoli/Progettazione-Implementazione}
+\include{Capitoli/Capitolo04}
+%
+%
+%%%% Le Conclusioni
+\pagestyle{plain}
+\include{Capitoli/Conclusione}
+%
+%%%% La bibliograﬁa
+\bibliographystyle{apalike} %{plain} -- Scegliere lo stile preferito
+\cleardoublepage
+\addcontentsline{toc}{chapter}{\bibname}
+\bibliography{./Bibliografia}
+%
+\include{Capitoli/Ringraziamenti}
+%
+% Le appendici
+\appendix
+\include{Capitoli/Appendici/Appendice1}
+%
+\end{document}
