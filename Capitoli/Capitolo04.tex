@@ -31,7 +31,7 @@ concentrati su:
 \end{figure}
 \textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono 
 gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già 
-incluso (libreria Microsoft.EntityFrameworkCore.Migrations;). 
+incluso (libreria \inlinecode{Microsoft.EntityFrameworkCore.Migrations;}). 
 
 \subsection{Scrittura nel linguaggio SQL}
 Il risultato finale di questa fase è il seguente (non sono riportate le tabelle generate dal 
@@ -157,4 +157,44 @@ procedure}.\ Tra i numerosi vantaggi proposti, l'idea principale era ottenere:
 \end{itemize}
 Tuttavia, durante lo sviluppo dell'applicativo, grazie al suggerimento di alcuni membri
 dell'azienda, si è preferito sostituire le procedure con interrogazioni dirette dal codice
-tramite la libreria \href{https://learn.microsoft.com/it-it/azure/azure-sql/database/elastic-scale-working-with-dapper?view=azuresql}{Dapper}, al fine di migliorare le prestazioni in termini di tempo.
+tramite il framework \href{https://learn.microsoft.com/it-it/azure/azure-sql/database/elastic-scale-working-with-dapper?view=azuresql}{Dapper}, al fine di poter migliorare:
+\begin{itemize}
+	\item Prestazioni in termini di tempo;
+	\item Semplificare il debugging del codice;
+	\item Centrallizzare l'intera logica in un unico posto.
+\end{itemize}
+All'interno della piattaforma si possono distinguere 3 macro categorie di interrogazioni per:
+\begin{itemize}
+	\item Inserimento dei dati per aggiungere:
+	\begin{itemize}
+		\item corsi;
+		\item categorie (sotto tipo dei corsi);
+		\item step (sotto tipo delle categorie);
+		\item corsi template;
+		\item categorie template (sotto tipo dei corsi template);
+		\item step template (sotto tipo delle categorie template).
+	\end{itemize}
+	\item Eliminazione dei dati per togliere:
+	\begin{itemize}
+		\item corsi;
+		\item categorie (sotto tipo dei corsi);
+		\item step (sotto tipo delle categorie);
+		\item corsi template;
+		\item categorie template (sotto tipo dei corsi template);
+		\item step template (sotto tipo delle categorie template).
+	\end{itemize}
+	\item Lettura dei dati per permettere di ottenere tutte le informazioni necessarie per la generazione
+	corretta della pagina dinamica dato un determinato utente connesso;
+\end{itemize}
+
+\section{Scrittura del codice C\#}\label{sec:cap_sec_subsec}
+Nel contesto dello sviluppo della parte back-end del progetto, è stato optato l'impiego del linguaggio di programmazione C\#. 
+Questa scelta si è rivelata fondamentale per la gestione della logica e il comportamento del sito web. 
+L'obbiettivo principale è stato garantire una gestione efficiente del database direttamente attraverso il codice, 
+sfruttando appieno le potenzialità del framework Dapper.
+\\
+Utilizzando C\# e il framework Dapper, è stato possibile realizzare un corretto collegamento tra dati e utenti. 
+Questo ha reso possibile la generazione dinamica e accurata delle pagine web, consentendo un'esperienza utente ottimale.
+
+
+\section{Layout della piattaforma}\label{sec:cap_sec_subsec}

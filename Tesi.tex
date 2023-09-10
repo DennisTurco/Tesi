@@ -9,11 +9,16 @@
 \usepackage{hyperref}			% link library
 \usepackage{listings}
 \usepackage{color}
+\usepackage{xcolor}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%%%%%%%%%%%Custom%%%%%%%%%%%%%%%%%%%%%
+% inline code
+\definecolor{codebackground}{HTML}{ededeb}
+\newcommand{\inlinecode}[1]{\colorbox{codebackground}{\textcolor{red}{#1}}}
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -131,11 +136,11 @@
 %
 %%%% I Capitoli di Contenuto	
 \pagestyle{fancy}
-\include{Capitoli/Formattazione}
-\include{Capitoli/Background}
-\include{Capitoli/Obiettivi}
-\include{Capitoli/Progettazione-Implementazione}
+\include{Capitoli/Capitolo01}
+\include{Capitoli/Capitolo02}
+\include{Capitoli/Capitolo03}
 \include{Capitoli/Capitolo04}
+\include{Capitoli/Capitolo05}
 %
 %
 %%%% Le Conclusioni

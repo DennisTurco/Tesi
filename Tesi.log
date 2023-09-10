@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.9)  9 SEP 2023 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.9)  10 SEP 2023 12:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -693,34 +693,56 @@ Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 \c@blind@pangramcount=\count361
 \c@blind@pangrammax=\count362
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 23.
+Package hyperref Info: Option `colorlinks' set `true' on input line 28.
  (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
 File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count363
 \l__pdf_internal_box=\box72
-) (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Formattazione.aux) (Capitoli/Background.aux) (Capitoli/Obiettivi.aux) (Capitoli/Progettazione-Implementazione.aux) (Capitoli/Capitolo04.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
+) (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Capitolo01.aux) (Capitoli/Capitolo02.aux
+
+LaTeX Warning: Label `chapter:formattazione' multiply defined.
+
+) (Capitoli/Capitolo03.aux
+
+LaTeX Warning: Label `chapter:formattazione' multiply defined.
+
+) (Capitoli/Capitolo04.aux
+
+LaTeX Warning: Label `chapter:formattazione' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+) (Capitoli/Capitolo05.aux
+
+LaTeX Warning: Label `chapter:formattazione' multiply defined.
+
+) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
 \openout1 = `Tesi.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 104.
-LaTeX Font Info:    ... okay on input line 104.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 109.
+LaTeX Font Info:    ... okay on input line 109.
  (C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count364
@@ -740,7 +762,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-Package hyperref Info: Link coloring ON on input line 104.
+Package hyperref Info: Link coloring ON on input line 109.
  (Tesi.out) (Tesi.out)
 \@outlinefile=\write5
 \openout5 = `Tesi.out'.
@@ -779,15 +801,15 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \it@ocap on input line 104.
-LaTeX Info: Redefining \it@ccap on input line 104.
+LaTeX Info: Redefining \it@ocap on input line 109.
+LaTeX Info: Redefining \it@ccap on input line 109.
 
 File italian.ldf warning: 
 italian.ldf    With OT1 encoding guillemets are poorly faked
 italian.ldf    Use T1 encoding
 italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
-italian.ldf    on input line 104.
+italian.ldf    on input line 109.
 
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
@@ -825,10 +847,10 @@ italian.ldf    on input line 104.
 
 
 pdfTeX warning: pdflatex (file ./theme/logo_unipr.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<theme/logo_unipr.pdf, id=44, 156.79077pt x 142.01357pt>
+<theme/logo_unipr.pdf, id=68, 156.79077pt x 142.01357pt>
 File: theme/logo_unipr.pdf Graphic file (type pdf)
 <use theme/logo_unipr.pdf>
-Package pdftex.def Info: theme/logo_unipr.pdf  used on input line 106.
+Package pdftex.def Info: theme/logo_unipr.pdf  used on input line 111.
 (pdftex.def)             Requested size: 172.78856pt x 156.49014pt.
 [1
 
@@ -914,34 +936,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--80
  []
 
 ) [3]
-\openout2 = `Capitoli/Formattazione.aux'.
+\openout2 = `Capitoli/Capitolo01.aux'.
 
-
-No file Capitoli/Formattazione.tex.
-\openout2 = `Capitoli/Background.aux'.
-
-No file Capitoli/Background.tex.
-\openout2 = `Capitoli/Obiettivi.aux'.
-
-No file Capitoli/Obiettivi.tex.
-\openout2 = `Capitoli/Progettazione-Implementazione.aux'.
-
-No file Capitoli/Progettazione-Implementazione.tex.
-\openout2 = `Capitoli/Capitolo04.aux'.
-
-(Capitoli/Capitolo04.tex [4
-
-
-
-
-
-
-
-
-
-
-
-
+ (Capitoli/Capitolo01.tex [4
 
 
 
@@ -949,22 +946,55 @@ No file Capitoli/Progettazione-Implementazione.tex.
 
 ]
 Capitolo 1.
+) [5]
+\openout2 = `Capitoli/Capitolo02.aux'.
+
+ (Capitoli/Capitolo02.tex [6
+
+
+
+
+
+]
+Capitolo 2.
+) [7]
+\openout2 = `Capitoli/Capitolo03.aux'.
+
+ (Capitoli/Capitolo03.tex [8
+
+
+
+
+
+]
+Capitolo 3.
+) [9]
+\openout2 = `Capitoli/Capitolo04.aux'.
+
+ (Capitoli/Capitolo04.tex [10
+
+
+
+
+
+]
+Capitolo 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
-<img/progettazione_database.png, id=130, 1276.77pt x 693.59125pt>
+<img/progettazione_database.png, id=185, 1276.77pt x 693.59125pt>
 File: img/progettazione_database.png Graphic file (type png)
 <use img/progettazione_database.png>
 Package pdftex.def Info: img/progettazione_database.png  used on input line 28.
 (pdftex.def)             Requested size: 390.0pt x 211.85722pt.
 
-Overfull \hbox (7.72089pt too wide) in paragraph at lines 32--35
-\OT1/cmr/m/n/12 ten-ti-ca-zio-ne gi^^Ra in-clu-so (li-bre-ria Mi-cro-soft.EntityFrameworkCore.Migrations;). 
+Overfull \hbox (13.72089pt too wide) in paragraph at lines 32--35
+\OT1/cmr/m/n/12 ten-ti-ca-zio-ne gi^^Ra in-clu-so (li-bre-ria [][][][][][]). 
  []
 
-[5]
+[11]
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 39.
 
 
@@ -974,7 +1004,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6 <./img/progettazione_database.png>]
+[12 <./img/progettazione_database.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -985,7 +1015,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[13]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
@@ -996,7 +1026,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8])
+[14]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1004,34 +1034,53 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[9]
+[15])
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16]
+\openout2 = `Capitoli/Capitolo05.aux'.
+
+ (Capitoli/Capitolo05.tex
+Capitolo 5.
+) [17
+
+
+
+
+
+]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (Capitoli/Conclusione.tex [10
+ (Capitoli/Conclusione.tex [18
 
 
 
 
 
-]) [11] [12
+]) [19] [20
 
 
 
 
-] (Tesi.bbl) [13
+] (Tesi.bbl) [21
 
 
 ]
 \openout2 = `Capitoli/Ringraziamenti.aux'.
 
- (Capitoli/Ringraziamenti.tex [14
+ (Capitoli/Ringraziamenti.tex [22
 
 
 
-]) [15]
+]) [23]
 \openout2 = `Capitoli/Appendici/Appendice1.aux'.
 
- (Capitoli/Appendici/Appendice1.tex [16
+ (Capitoli/Appendici/Appendice1.tex [24
 
 
 
@@ -1039,26 +1088,30 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 ]
 Appendice A.
-) [17] (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Formattazione.aux) (Capitoli/Background.aux) (Capitoli/Obiettivi.aux) (Capitoli/Progettazione-Implementazione.aux) (Capitoli/Capitolo04.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
+) [25] (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Capitolo01.aux) (Capitoli/Capitolo02.aux) (Capitoli/Capitolo03.aux) (Capitoli/Capitolo04.aux) (Capitoli/Capitolo05.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: DDEAA66911D09636A066FC8B38393436;583.
+(rerunfilecheck)             Checksum: 2DEE9BFB3072BC69F04FCB9AEB8ABB29;1037.
  ) 
 Here is how much of TeX's memory you used:
- 30408 strings out of 475247
- 540394 string characters out of 5767605
+ 30442 strings out of 475247
+ 540643 string characters out of 5767605
  2242801 words of memory out of 5000000
- 51206 multiletter control sequences out of 15000+600000
+ 51218 multiletter control sequences out of 15000+600000
  566525 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,12n,109p,603b,3730s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Tesi.pdf (27 pages, 219410 bytes).
+Output written on Tesi.pdf (35 pages, 230884 bytes).
 PDF statistics:
- 373 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 107 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 439 PDF objects out of 1000 (max. 8388607)
+ 170 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
