@@ -1,5 +1,5 @@
 \chapter{Il progetto e il suo sviluppo}\label{chapter:formattazione}
-
+%
 \section{Database}\label{sec:cap_sec_subsec}
 Una parte sostanziale del nostro impegno aziendale per portare a compimento il 
 progetto si è concentrata in modo dettagliato sulla creazione del database, ritenuto 
@@ -11,7 +11,10 @@ La creazione del database è stata articolata in diverse fasi chiave:
 	\item Scrittura del database in linguaggio SQL, una tappa essenziale.
 	\item Implementazione delle interrogazioni al database nella sezione di backend, facendo uso della libreria Dapper.
 \end{itemize}
-
+\textit{Nota}: il database è stato creato e gestito unicamente in locale per questioni di semplicità e per
+l'esecuzione di test sulla correttezza della struttura e dell'implementazione del database stesso.
+%
+%
 \subsection{Progettazione}
 La fase di progettazione~\ref{fig:one} del database ha occupato un ruolo fondamentale nel corso di 
 questo processo, coinvolgendo un'analisi costante e una riflessione profonda. Il nostro 
@@ -32,7 +35,7 @@ concentrati su:
 \textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono 
 gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già 
 incluso (libreria \inlinecode{Microsoft.EntityFrameworkCore.Migrations;}). 
-
+%
 \subsection{Scrittura nel linguaggio SQL}
 Il risultato finale di questa fase è il seguente (non sono riportate le tabelle generate dal 
 servizio di Autenticazione, perchè gestite automaticamente dalla libreria a disposizione):
@@ -146,7 +149,7 @@ GO
 CREATE NONCLUSTERED INDEX [IX_StepTemplate_IDCategoryTemplate] 
     ON [dbo].[StepTemplate]([IDCategoryTemplate] ASC);
 \end{lstlisting}
-
+%
 \subsection{Interrogazioni al Database}
 Inizialmente, le interrogazioni al database erano state sviluppate attraverso \href{https://learn.microsoft.com/it-it/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16}{stored 
 procedure}.\ Tra i numerosi vantaggi proposti, l'idea principale era ottenere:
@@ -186,7 +189,7 @@ All'interno della piattaforma si possono distinguere 3 macro categorie di interr
 	\item Lettura dei dati per permettere di ottenere tutte le informazioni necessarie per la generazione
 	corretta della pagina dinamica dato un determinato utente connesso;
 \end{itemize}
-
+%
 \section{Scrittura del codice C\#}\label{sec:cap_sec_subsec}
 Nel contesto dello sviluppo della parte back-end del progetto, è stato optato l'impiego del linguaggio di programmazione C\#. 
 Questa scelta si è rivelata fondamentale per la gestione della logica e il comportamento del sito web. 
@@ -195,6 +198,5 @@ sfruttando appieno le potenzialità del framework Dapper.
 \\
 Utilizzando C\# e il framework Dapper, è stato possibile realizzare un corretto collegamento tra dati e utenti. 
 Questo ha reso possibile la generazione dinamica e accurata delle pagine web, consentendo un'esperienza utente ottimale.
-
-
+%
 \section{Layout della piattaforma}\label{sec:cap_sec_subsec}
