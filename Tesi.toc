@@ -13,8 +13,7 @@
 \contentsline {subsection}{\numberline {4.1.2}Scrittura nel linguaggio SQL}{12}{subsection.4.1.2}%
 \contentsline {subsection}{\numberline {4.1.3}Interrogazioni al Database}{15}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Scrittura del codice C\#}{16}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Layout della piattaforma}{16}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Risultati e sviluppi futuri}{17}{chapter.5}%
-\contentsline {chapter}{Conclusione}{19}{chapter*.7}%
-\contentsline {chapter}{Bibliografia}{21}{chapter*.7}%
-\contentsline {chapter}{\numberline {A}Appendice di Esempio}{25}{appendix.Alph1}%
+\contentsline {section}{\numberline {4.3}Layout della piattaforma}{19}{section.4.3}%
+\contentsline {chapter}{\numberline {5}Risultati e sviluppi futuri}{21}{chapter.5}%
+\contentsline {chapter}{Conclusione}{23}{chapter*.7}%
+\contentsline {chapter}{Bibliografia}{25}{chapter*.7}%

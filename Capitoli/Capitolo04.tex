@@ -1,26 +1,27 @@
 \chapter{Il progetto e il suo sviluppo}\label{chapter:formattazione}
 %
 \section{Database}\label{sec:cap_sec_subsec}
-Una parte sostanziale del nostro impegno aziendale per portare a compimento il 
-progetto si è concentrata in modo dettagliato sulla creazione del database, ritenuto 
-elemento cruciale per assicurare il pieno funzionamento della piattaforma.
-\\ \\
-La creazione del database è stata articolata in diverse fasi chiave:
+Una parte sostanziale del nostro impegno aziendale per portare a compimento il
+progetto si è concentrata in modo dettagliato sulla creazione del database,
+ritenuto elemento cruciale per assicurare il pieno funzionamento della
+piattaforma. \\ \\ La creazione del database è stata articolata in diverse fasi
+chiave:
 \begin{itemize}
 	\item Progettazione della struttura del database, un processo attentamente studiato.
 	\item Scrittura del database in linguaggio SQL, una tappa essenziale.
-	\item Implementazione delle interrogazioni al database nella sezione di backend, facendo uso della libreria Dapper.
+	\item Implementazione delle interrogazioni al database nella sezione di backend,
+	      facendo uso della libreria Dapper.
 \end{itemize}
 \textit{Nota}: il database è stato creato e gestito unicamente in locale per questioni di semplicità e per
 l'esecuzione di test sulla correttezza della struttura e dell'implementazione del database stesso.
 %
 %
 \subsection{Progettazione}
-La fase di progettazione~\ref{fig:one} del database ha occupato un ruolo fondamentale nel corso di 
-questo processo, coinvolgendo un'analisi costante e una riflessione profonda. Il nostro 
-obiettivo principale era plasmare un database estremamente completo, in grado di 
-soddisfare appieno le esigenze della piattaforma di e-learning. In aggiunta, ci siamo 
-concentrati su:
+La fase di progettazione~\ref{fig:one} del database ha occupato un ruolo
+fondamentale nel corso di questo processo, coinvolgendo un'analisi costante e
+una riflessione profonda. Il nostro obiettivo principale era plasmare un
+database estremamente completo, in grado di soddisfare appieno le esigenze
+della piattaforma di e-learning. In aggiunta, ci siamo concentrati su:
 \begin{itemize}
 	\item Migliorare la leggibilità del database;
 	\item Rendere più agevole la manutenzione;
@@ -32,13 +33,14 @@ concentrati su:
 	\caption{progettazione del database}
 	\label{fig:one}
 \end{figure}
-\textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono 
-gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già 
-incluso (libreria \inlinecode{Microsoft.EntityFrameworkCore.Migrations;}). 
+\textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono
+gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già
+incluso (libreria \inlinecode{Microsoft.EntityFrameworkCore.Migrations;}).
 %
 \subsection{Scrittura nel linguaggio SQL}
-Il risultato finale di questa fase è il seguente (non sono riportate le tabelle generate dal 
-servizio di Autenticazione, perchè gestite automaticamente dalla libreria a disposizione):
+Il risultato finale di questa fase è il seguente (non sono riportate le tabelle
+generate dal servizio di Autenticazione, perchè gestite automaticamente dalla
+libreria a disposizione):
 \begin{lstlisting}[language=SQL, caption=traduzione della progettazione del database nel linguaggio SQL]
 CREATE TABLE [dbo].[Course] ( 
     [Id]         INT            IDENTITY (1, 1) NOT NULL, 
@@ -151,8 +153,9 @@ CREATE NONCLUSTERED INDEX [IX_StepTemplate_IDCategoryTemplate]
 \end{lstlisting}
 %
 \subsection{Interrogazioni al Database}
-Inizialmente, le interrogazioni al database erano state sviluppate attraverso \href{https://learn.microsoft.com/it-it/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16}{stored 
-procedure}.\ Tra i numerosi vantaggi proposti, l'idea principale era ottenere:
+Inizialmente, le interrogazioni al database erano state sviluppate attraverso
+\href{https://learn.microsoft.com/it-it/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16}{stored
+	procedure}.\ Tra i numerosi vantaggi proposti, l'idea principale era ottenere:
 \begin{itemize}
 	\item Riutilizzo del codice;
 	\item Semplificazione della manutenzione;
@@ -169,34 +172,124 @@ tramite il framework \href{https://learn.microsoft.com/it-it/azure/azure-sql/dat
 All'interno della piattaforma si possono distinguere 3 macro categorie di interrogazioni per:
 \begin{itemize}
 	\item Inserimento dei dati per aggiungere:
-	\begin{itemize}
-		\item corsi;
-		\item categorie (sotto tipo dei corsi);
-		\item step (sotto tipo delle categorie);
-		\item corsi template;
-		\item categorie template (sotto tipo dei corsi template);
-		\item step template (sotto tipo delle categorie template).
-	\end{itemize}
+	      \begin{itemize}
+		      \item corsi;
+		      \item categorie (sotto tipo dei corsi);
+		      \item step (sotto tipo delle categorie);
+		      \item corsi template;
+		      \item categorie template (sotto tipo dei corsi template);
+		      \item step template (sotto tipo delle categorie template).
+	      \end{itemize}
 	\item Eliminazione dei dati per togliere:
-	\begin{itemize}
-		\item corsi;
-		\item categorie (sotto tipo dei corsi);
-		\item step (sotto tipo delle categorie);
-		\item corsi template;
-		\item categorie template (sotto tipo dei corsi template);
-		\item step template (sotto tipo delle categorie template).
-	\end{itemize}
-	\item Lettura dei dati per permettere di ottenere tutte le informazioni necessarie per la generazione
-	corretta della pagina dinamica dato un determinato utente connesso;
+	      \begin{itemize}
+		      \item corsi;
+		      \item categorie (sotto tipo dei corsi);
+		      \item step (sotto tipo delle categorie);
+		      \item corsi template;
+		      \item categorie template (sotto tipo dei corsi template);
+		      \item step template (sotto tipo delle categorie template).
+	      \end{itemize}
+	\item Lettura dei dati per permettere di ottenere tutte le informazioni necessarie
+	      per la generazione corretta della pagina dinamica dato un determinato utente
+	      connesso;
 \end{itemize}
 %
 \section{Scrittura del codice C\#}\label{sec:cap_sec_subsec}
-Nel contesto dello sviluppo della parte back-end del progetto, è stato optato l'impiego del linguaggio di programmazione C\#. 
-Questa scelta si è rivelata fondamentale per la gestione della logica e il comportamento del sito web. 
-L'obbiettivo principale è stato garantire una gestione efficiente del database direttamente attraverso il codice, 
-sfruttando appieno le potenzialità del framework Dapper.
-\\
-Utilizzando C\# e il framework Dapper, è stato possibile realizzare un corretto collegamento tra dati e utenti. 
-Questo ha reso possibile la generazione dinamica e accurata delle pagine web, consentendo un'esperienza utente ottimale.
+Nel contesto dello sviluppo della parte back-end del progetto, è stato optato
+l'impiego del linguaggio di programmazione C\#. Questa scelta si è rivelata
+fondamentale per la gestione della logica e il comportamento del sito web.\
+L'obbiettivo principale è stato garantire una gestione efficiente del database
+direttamente attraverso il codice, sfruttando appieno le potenzialità del
+framework Dapper. \\ Utilizzando C\# e il framework Dapper, è stato possibile
+realizzare un corretto collegamento tra dati e utenti.\ Questo ha reso
+possibile la generazione dinamica e accurata delle pagine web, consentendo
+un'esperienza utente ottimale. \\ \\ Per eseguire delle query al database è
+stato necessario creare una connessione dal codice C\# al database attraverso
+la libreria \inlinecode{Microsoft.Data.SqlClient;}
 %
+%TODO: fixhere
+\begin{algorithm}[H]
+	\caption{classe per ottenere la stringa di connessione al database}
+	\label{lst:genic_mpi}
+	\begin{lstlisting}[label=lst:test]
+	using Microsoft.Data.SqlClient;
+	using Microsoft.EntityFrameworkCore;
+
+	namespace OnBoarding.Services
+	{
+		public class ConnectionService
+		private SqlConnection _connection = new SqlConnection();
+		private SqlCommand _command = new SqlCommand();
+
+		public static IConfiguration? Configuration { get; set; }
+
+		public string GetconnectionString()
+		{
+			var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
+
+			Configuration = builder.Build();
+			return Configuration.GetConnectionString("ApplicationDBContextConnection");
+		}
+
+
+		public SqlConnection GetConnection() 
+		{
+			return _connection;
+		}
+
+		public SqlCommand GetCommand()
+		{
+			return _command;
+		}
+
+		}
+	}
+	\end{lstlisting}
+\end{algorithm}
+%
+In questo modo, una volta che è stata stabilita una connessione, 
+è stato reso possibile il processo di scrittura di query. A titolo esemplificativo, si può menzionare 
+la query nella funzione denominata ``GetCourses'' presente all'interno del file ``CourseManager.cs''.\ Questa query, 
+quando viene fornito l'ID dell'utente come input, ha lo scopo principale di recuperare e restituire 
+l'insieme completo dei corsi associati all'utente specificato.
+%
+%TODO: fixhere
+\begin{algorithm}[H]
+	\caption{esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper}
+	\label{lst:genic_mpi}
+	\begin{lstlisting}[label=lst:test]
+	public List<CourseModel> GetCourses(string userid)
+	{
+		using (_connection = new SqlConnection(connectionService.GetconnectionString()))
+		{
+			_connection.Open();
+
+			string sql = 
+				@"SELECT DISTINCT Course.* 
+				FROM Course, AspNetUsers, UserCourse 
+				WHERE UserCourse.UserId = @userId     
+				AND UserCourse.CourseId = Course.Id";
+			var coursesList = _connection.Query<CourseModel>(sql, new { userId = userid }).ToList();
+
+			_connection.Close();
+
+			return coursesList;
+		}
+	} 
+	\end{lstlisting}
+\end{algorithm}
+%
+Si osserva che ciascun utente può essere associato a più corsi, 
+stabilendo così una relazione uno a molti.\ Pertanto, è fondamentale 
+che il valore restituito dalla funzione sia di tipo \inlinecode{List\textless CourseModel \textgreater}, 
+in quanto questa struttura dati può contenere più di un corso associato a 
+un utente specifico.\ Inoltre, grazie all'uso di Dapper, è possibile effettuare 
+un'interrogazione al database mediante una stringa appositamente creata 
+(come mostrato nelle righe 7\--11 del codice).\ Successivamente, è possibile 
+ottenere il risultato dell'interrogazione corrispondente al parametro ``userid'' 
+fornito alla funzione e al campo ``userId'' nella tabella ``Course'' (riga 12 del codice).
+\\
+Notare che siccome la funzione ritorna in questo caso una lista, il risultato della query
+dovrà essere convertito in una collezione di oggetti dello stesso tipo (attraverso alla funzione di libreria \inlinecode{ToList()}).
+
 \section{Layout della piattaforma}\label{sec:cap_sec_subsec}
