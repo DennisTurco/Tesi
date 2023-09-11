@@ -3,7 +3,7 @@
 %-------------------------- initial code -----------------------
 
 % Defaults to two-side, but passing 'oneside' should set everything up for that
-\LoadClass[12pt, a4paper, twoside]{book}
+\LoadClass[12pt, a4paper, oneside]{book}
 
 % Some useful packages
 \usepackage[utf8]{inputenc} 					% accented letters

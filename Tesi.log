@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  11 SEP 2023 17:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  11 SEP 2023 18:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -439,6 +439,10 @@ File: lstlang1.sty 2023/02/27 1.9 listings language file
 ) (C:\Program Files\MiKTeX\tex/latex/listings\lstmisc.sty
 File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
+
+Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
+(fancyhdr)                Please consider using the `twoside' option on input line 101.
+
 \c@thm=\count310
 \c@defn=\count311
 \c@example=\count312
@@ -798,14 +802,14 @@ Package caption Info: End \AtBeginDocument code.
 * \paperheight=845.04684pt
 * \textwidth=390.0pt
 * \textheight=592.0pt
-* \oddsidemargin=10.0pt
-* \evensidemargin=52.0pt
+* \oddsidemargin=31.0pt
+* \evensidemargin=31.0pt
 * \topmargin=23.0pt
 * \headheight=12.0pt
 * \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=88.0pt
+* \marginparwidth=38.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -813,8 +817,8 @@ Package caption Info: End \AtBeginDocument code.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -828,13 +832,16 @@ italian.ldf    or specify a font with command \CaporaliFrom
 italian.ldf    See the documentation concerning the babel-italian typesetting 
 italian.ldf    on input line 104.
 
+
+Package todonotes Warning: The length marginparwidth is less than 2cm and will most likely cause issues with the appearance of inserted todonotes. The issue can be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to loading the todonotes package. on input line 104.
+
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
 * paper: <default>
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * hratio: 1:1
-* modes: twoside 
+* modes: 
 * h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
 * v-part:(T,H,B)=(56.9055pt, 745.46222pt, 42.67912pt)
 * \paperwidth=597.50787pt
@@ -848,7 +855,7 @@ italian.ldf    on input line 104.
 * \headsep=19.8738pt
 * \topskip=12.0pt
 * \footskip=30.0pt
-* \marginparwidth=88.0pt
+* \marginparwidth=38.0pt
 * \marginparsep=7.0pt
 * \columnsep=10.0pt
 * \skip\footins=10.8pt plus 4.0pt minus 2.0pt
@@ -856,8 +863,8 @@ italian.ldf    on input line 104.
 * \voffset=0.0pt
 * \mag=1000
 * \@twocolumnfalse
-* \@twosidetrue
-* \@mparswitchtrue
+* \@twosidefalse
+* \@mparswitchfalse
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
@@ -881,35 +888,31 @@ Package pdftex.def Info: theme/logo_unipr.pdf  used on input line 106.
  [1
 
 
-] [2
-
-
 ] (Tesi.lof)
 \tf@lof=\write7
 \openout7 = `Tesi.lof'.
 
- [3] [4
+ [2
 
 
 ] (Tesi.loa)
 \tf@loa=\write8
 \openout8 = `Tesi.loa'.
 
- [5] [6
+ [3
 
 
 ] (Tesi.lot)
 \tf@lot=\write9
 \openout9 = `Tesi.lot'.
 
- [7]
-\openout2 = `Capitoli/Introduzione.aux'.
-
- (Capitoli/Introduzione.tex [8
-
+ [4
 
 
 ]
+\openout2 = `Capitoli/Introduzione.aux'.
+
+ (Capitoli/Introduzione.tex
 Underfull \hbox (badness 10000) in paragraph at lines 4--52
 
  []
@@ -928,16 +931,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--52
 Underfull \hbox (badness 10000) in paragraph at lines 4--52
 
  []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.52 \begin{itemize}
-                     [1]
+                     [1
+
+
+
+]
 Underfull \hbox (badness 10000) in paragraph at lines 63--68
 
  []
@@ -955,42 +959,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 75--80
 ) [3]
 \openout2 = `Capitoli/Capitolo01.aux'.
 
- (Capitoli/Capitolo01.tex [4
+ (Capitoli/Capitolo01.tex
+Capitolo 1.
+) [4
 
 
 
 
 
 ]
-Capitolo 1.
-) [5]
 \openout2 = `Capitoli/Capitolo02.aux'.
 
- (Capitoli/Capitolo02.tex [6
+ (Capitoli/Capitolo02.tex
+Capitolo 2.
+) [5
 
 
 
 
 
 ]
-Capitolo 2.
-) [7]
 \openout2 = `Capitoli/Capitolo03.aux'.
 
- (Capitoli/Capitolo03.tex [8
-
-
-
-
-
-]
+ (Capitoli/Capitolo03.tex
 Capitolo 3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 20--37
 
  []
 
-[9])
+[6
+
+
+
+
+
+])
 Overfull \hbox (2.43344pt too wide) in paragraph at lines 38--136
 \OT1/cmr/m/n/12 Per la ge-stio-ne del-l'in-ter-fac-cia uten-te, so-no sta-ti uti-liz-za-ti il lin-guag-gio HTML,
  []
@@ -1002,7 +1006,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[10]
+[7]
 \openout2 = `Capitoli/Capitolo04.aux'.
 
  (Capitoli/Capitolo04.tex
@@ -1012,14 +1016,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
  []
 
-[11
+[8
 
 
 
 
 
 ]
-<img/progettazione_database.png, id=207, 1276.77pt x 693.59125pt>
+<img/progettazione_database.png, id=178, 1276.77pt x 693.59125pt>
 File: img/progettazione_database.png Graphic file (type png)
 <use img/progettazione_database.png>
 Package pdftex.def Info: img/progettazione_database.png  used on input line 32.
@@ -1037,9 +1041,36 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[12 <./img/progettazione_database.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[9 <./img/progettazione_database.png>]
 
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[10]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[11]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[12]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 212.
+
+Underfull \hbox (badness 10000) in paragraph at lines 198--248
+
+ []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1049,9 +1080,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1060,40 +1088,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [14]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[15]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on input line 212.
-
-Underfull \hbox (badness 10000) in paragraph at lines 198--248
-
- []
-
-
-Underfull \vbox (badness 1442) has occurred while \output is active []
-
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[16]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[17]
 LaTeX Font Info:    Trying to load font information for OML+cmr on input line 284.
  (C:\Program Files\MiKTeX\tex/latex/base\omlcmr.fd
 File: omlcmr.fd 2023/04/13 v2.5m Standard LaTeX font definitions
@@ -1108,7 +1102,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]
+[15]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1116,27 +1110,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[16]
 \openout2 = `Capitoli/Capitolo05.aux'.
 
- (Capitoli/Capitolo05.tex [20
+ (Capitoli/Capitolo05.tex
+Capitolo 5.
+) [17
 
 
 
 
 
 ]
-Capitolo 5.
-) [21]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (Capitoli/Conclusione.tex [22
+ (Capitoli/Conclusione.tex) [18
 
-
-
-
-
-]) [23] [24
 
 
 
@@ -1144,7 +1133,11 @@ Capitolo 5.
 ]
 \openout2 = `Capitoli/Ringraziamenti.aux'.
 
- (Capitoli/Ringraziamenti.tex) [25
+ (Capitoli/Ringraziamenti.tex) [19
+
+
+
+
 
 
 
@@ -1161,17 +1154,17 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 29AF9F027EDD8EA3BC4DE0FFDC6D4E39;1143.
  ) 
 Here is how much of TeX's memory you used:
- 30670 strings out of 475247
- 542791 string characters out of 5767604
+ 30660 strings out of 475247
+ 542719 string characters out of 5767604
  2222801 words of memory out of 5000000
  51399 multiletter control sequences out of 15000+600000
  566525 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,12n,109p,603b,3728s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Tesi.pdf (35 pages, 252631 bytes).
+Output written on Tesi.pdf (25 pages, 247724 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 224 named destinations out of 1000 (max. 500000)
+ 476 PDF objects out of 1000 (max. 8388607)
+ 214 named destinations out of 1000 (max. 500000)
  171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
