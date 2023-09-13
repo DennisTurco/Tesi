@@ -35,7 +35,13 @@ della piattaforma di e-learning. In aggiunta, ci siamo concentrati su:
 \end{figure}
 \textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono
 gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già
-incluso (libreria \inlinecode{Microsoft.EntityFrameworkCore.Migrations;}).
+incluso (libreria \inlinecode{Microsoft.AspNet.Identity.EntityFramework;}).
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/TreeStructureDatabase.png}
+	\caption{Tree structure del database}
+	\label{fig:two}
+\end{figure}
 %
 \subsection{Scrittura nel linguaggio SQL}
 Il risultato finale di questa fase è il seguente (non sono riportate le tabelle
@@ -212,38 +218,38 @@ la libreria \inlinecode{Microsoft.Data.SqlClient;}
 	\caption{classe per ottenere la stringa di connessione al database}
 	\label{lst:genic_mpi}
 	\begin{lstlisting}[label=lst:test]
-	using Microsoft.Data.SqlClient;
-	using Microsoft.EntityFrameworkCore;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
-	namespace OnBoarding.Services
+namespace OnBoarding.Services
+{
+	public class ConnectionService
+	private SqlConnection _connection = new SqlConnection();
+	private SqlCommand _command = new SqlCommand();
+
+	public static IConfiguration? Configuration { get; set; }
+
+	public string GetconnectionString()
 	{
-		public class ConnectionService
-		private SqlConnection _connection = new SqlConnection();
-		private SqlCommand _command = new SqlCommand();
+		var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
 
-		public static IConfiguration? Configuration { get; set; }
-
-		public string GetconnectionString()
-		{
-			var builder = new ConfigurationBuilder().SetBasePath(Directory.GetCurrentDirectory()).AddJsonFile("appsettings.json");
-
-			Configuration = builder.Build();
-			return Configuration.GetConnectionString("ApplicationDBContextConnection");
-		}
-
-
-		public SqlConnection GetConnection() 
-		{
-			return _connection;
-		}
-
-		public SqlCommand GetCommand()
-		{
-			return _command;
-		}
-
-		}
+		Configuration = builder.Build();
+		return Configuration.GetConnectionString("ApplicationDBContextConnection");
 	}
+
+
+	public SqlConnection GetConnection() 
+	{
+		return _connection;
+	}
+
+	public SqlCommand GetCommand()
+	{
+		return _command;
+	}
+
+	}
+}
 	\end{lstlisting}
 \end{algorithm}
 %
@@ -258,24 +264,24 @@ l'insieme completo dei corsi associati all'utente specificato.
 	\caption{esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper}
 	\label{lst:genic_mpi}
 	\begin{lstlisting}[label=lst:test]
-	public List<CourseModel> GetCourses(string userid)
+public List<CourseModel> GetCourses(string userid)
+{
+	using (_connection = new SqlConnection(connectionService.GetconnectionString()))
 	{
-		using (_connection = new SqlConnection(connectionService.GetconnectionString()))
-		{
-			_connection.Open();
+		_connection.Open();
 
-			string sql = 
-				@"SELECT DISTINCT Course.* 
-				FROM Course, AspNetUsers, UserCourse 
-				WHERE UserCourse.UserId = @userId     
-				AND UserCourse.CourseId = Course.Id";
-			var coursesList = _connection.Query<CourseModel>(sql, new { userId = userid }).ToList();
+		string sql = 
+			@"SELECT DISTINCT Course.* 
+			FROM Course, AspNetUsers, UserCourse 
+			WHERE UserCourse.UserId = @userId     
+			AND UserCourse.CourseId = Course.Id";
+		var coursesList = _connection.Query<CourseModel>(sql, new { userId = userid }).ToList();
 
-			_connection.Close();
+		_connection.Close();
 
-			return coursesList;
-		}
-	} 
+		return coursesList;
+	}
+} 
 	\end{lstlisting}
 \end{algorithm}
 %

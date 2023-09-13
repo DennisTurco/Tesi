@@ -1,2 +1,3 @@
-\contentsline {algorithm}{\numberline {1}{\ignorespaces classe per ottenere la stringa di connessione al database}}{14}{algorithm.1}%
-\contentsline {algorithm}{\numberline {2}{\ignorespaces esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper}}{15}{algorithm.2}%
+\contentsline {algorithm}{\numberline {1}{\ignorespaces algoritmo di hashing per criptare le password usato dal servizio Identity}}{8}{algorithm.1}%
+\contentsline {algorithm}{\numberline {2}{\ignorespaces classe per ottenere la stringa di connessione al database}}{17}{algorithm.2}%
+\contentsline {algorithm}{\numberline {3}{\ignorespaces esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper}}{18}{algorithm.3}%
