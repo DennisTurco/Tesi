@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  22 SEP 2023 23:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  29 SEP 2023 15:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -441,7 +441,7 @@ File: lstmisc.sty 2023/02/27 1.9 (Carsten Heinz)
 )
 
 Package fancyhdr Warning: \fancyhead's `E' option without twoside option is useless.
-(fancyhdr)                Please consider using the `twoside' option on input line 101.
+(fancyhdr)                Please consider using the `twoside' option on input line 137.
 
 \c@thm=\count310
 \c@defn=\count311
@@ -764,14 +764,29 @@ LaTeX Warning: Label `lst:test' multiply defined.
 LaTeX Warning: Label `lst:genic_mpi' multiply defined.
 
 
-LaTeX Warning: Label `lst:test' multiply defined.
-
-
 LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
 
 ) (Capitoli/Capitolo05.aux
 
 LaTeX Warning: Label `chapter:formattazione' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
+
+
+LaTeX Warning: Label `sec:cap_sec_subsec' multiply defined.
 
 ) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
 \openout1 = `Tesi.aux'.
@@ -901,7 +916,7 @@ Package todonotes Warning: The length marginparwidth is less than 2cm and will m
 
 
 pdfTeX warning: pdflatex (file ./theme/logo_unipr.pdf): PDF inclusion: found PDF version <1.6>, but at most version <1.5> allowed
-<theme/logo_unipr.pdf, id=104, 156.79077pt x 142.01357pt>
+<theme/logo_unipr.pdf, id=128, 156.79077pt x 142.01357pt>
 File: theme/logo_unipr.pdf Graphic file (type pdf)
 <use theme/logo_unipr.pdf>
 Package pdftex.def Info: theme/logo_unipr.pdf  used on input line 106.
@@ -911,32 +926,32 @@ Package pdftex.def Info: theme/logo_unipr.pdf  used on input line 106.
 
  <./theme/logo_unipr.pdf>] [2
 
-] (Tesi.toc)
+] (Tesi.toc [1
+
+
+])
 \tf@toc=\write6
 \openout6 = `Tesi.toc'.
 
- [1
-
-
-] (Tesi.lof)
+ [2] (Tesi.lof)
 \tf@lof=\write7
 \openout7 = `Tesi.lof'.
 
- [2
+ [3
 
 
 ] (Tesi.loa)
 \tf@loa=\write8
 \openout8 = `Tesi.loa'.
 
- [3
+ [4
 
 
 ] (Tesi.lot)
 \tf@lot=\write9
 \openout9 = `Tesi.lot'.
 
- [4
+ [5
 
 
 ]
@@ -1085,12 +1100,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--9
 
 
 ]
-<img/progettazione_database.png, id=256, 1276.77pt x 693.59125pt>
+<img/progettazione_database.png, id=290, 1276.77pt x 693.59125pt>
 File: img/progettazione_database.png Graphic file (type png)
 <use img/progettazione_database.png>
 Package pdftex.def Info: img/progettazione_database.png  used on input line 31.
 (pdftex.def)             Requested size: 390.0pt x 211.85722pt.
-<img/TreeStructureDatabase.png, id=258, 324.46219pt x 596.2275pt>
+<img/TreeStructureDatabase.png, id=292, 324.46219pt x 596.2275pt>
 File: img/TreeStructureDatabase.png Graphic file (type png)
 <use img/TreeStructureDatabase.png>
 Package pdftex.def Info: img/TreeStructureDatabase.png  used on input line 44.
@@ -1209,16 +1224,93 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
  (Capitoli/Capitolo05.tex
 Capitolo 5.
-) [21
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--40
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--40
+
+ []
+
+[21
 
 
 
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 41--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--61
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[22])
+Underfull \hbox (badness 10000) in paragraph at lines 70--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--138
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 70--138
+
+ []
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[24]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (Capitoli/Conclusione.tex) [22
+ (Capitoli/Conclusione.tex) [25
 
 
 
@@ -1227,7 +1319,7 @@ Capitolo 5.
 ]
 \openout2 = `Capitoli/Ringraziamenti.aux'.
 
- (Capitoli/Ringraziamenti.tex) [23
+ (Capitoli/Ringraziamenti.tex) [26
 
 
 
@@ -1241,13 +1333,15 @@ Capitolo 5.
  (Capitoli/Appendici/Appendice1.tex
 Appendice A.
 Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 4.
-[24
+LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 6.
+[27
 
 
 
 
 
-] [25]) [26] (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Capitolo01.aux) (Capitoli/Capitolo02.aux) (Capitoli/Capitolo03.aux) (Capitoli/Capitolo04.aux) (Capitoli/Capitolo05.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
+] [28]) [29] (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Capitolo01.aux) (Capitoli/Capitolo02.aux) (Capitoli/Capitolo03.aux) (Capitoli/Capitolo04.aux) (Capitoli/Capitolo05.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1257,20 +1351,20 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 0665419990E401706F3BEB2C650AA87F;1645.
+(rerunfilecheck)             Checksum: 3980BEDAFD50B6DB3EF50E82EA6BBE9D;2073.
  ) 
 Here is how much of TeX's memory you used:
- 30882 strings out of 475247
- 547420 string characters out of 5767604
+ 30907 strings out of 475247
+ 547725 string characters out of 5767604
  2203801 words of memory out of 5000000
- 51541 multiletter control sequences out of 15000+600000
+ 51551 multiletter control sequences out of 15000+600000
  566525 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 107i,12n,109p,603b,3716s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 107i,12n,109p,603b,3714s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Tesi.pdf (32 pages, 424072 bytes).
+Output written on Tesi.pdf (36 pages, 436938 bytes).
 PDF statistics:
- 622 PDF objects out of 1000 (max. 8388607)
- 285 named destinations out of 1000 (max. 500000)
- 232 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 676 PDF objects out of 1000 (max. 8388607)
+ 300 named destinations out of 1000 (max. 500000)
+ 280 words of extra memory for PDF output out of 10000 (max. 10000000)
 
