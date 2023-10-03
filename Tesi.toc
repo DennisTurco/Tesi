@@ -28,5 +28,4 @@
 \contentsline {subsection}{\numberline {5.2.3}Creazione dei Corsi}{22}{subsection.5.2.3}%
 \contentsline {subsection}{\numberline {5.2.4}Layout della piattaforma}{23}{subsection.5.2.4}%
 \contentsline {chapter}{Conclusione}{25}{chapter*.8}%
-\contentsline {chapter}{Bibliografia}{26}{chapter*.8}%
 \contentsline {chapter}{\numberline {A}Scrittura del Database}{27}{appendix.Alph1}%
