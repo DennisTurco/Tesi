@@ -1,7 +1,7 @@
 \chapter{Scrittura del Database}
 %
 \label{appendice-database}
-\begin{lstlisting}[language=SQL, caption=traduzione della progettazione del database nel linguaggio SQL]
+\begin{lstlisting}[style=sql_style, caption=esempio sezione codice Javascript per la creazione di un grafico a barre per la rappresentazione dei dati]
 CREATE TABLE [dbo].[Course] ( 
     [Id]         INT            IDENTITY (1, 1) NOT NULL, 
     [Name]       NVARCHAR (255) NOT NULL, 
@@ -18,55 +18,55 @@ CREATE TABLE [dbo].[Category] (
     [IdCourse]   INT            NOT NULL, 
     CONSTRAINT [PK_Category] PRIMARY KEY CLUSTERED ([Id] ASC), 
     CONSTRAINT [FK_Category_Course_IdCourse]
-	FOREIGN KEY ([IdCourse]) REFERENCES [dbo].[Course] ([Id]) 
-	ON DELETE CASCADE 
-   ); 
-   GO 
-   CREATE NONCLUSTERED INDEX [IX_Category_IdCourse] 
-	   ON [dbo].[Category]([IdCourse] ASC); 	
+    FOREIGN KEY ([IdCourse]) REFERENCES [dbo].[Course] ([Id]) 
+    ON DELETE CASCADE 
+    ); 
+    GO 
+    CREATE NONCLUSTERED INDEX [IX_Category_IdCourse] 
+        ON [dbo].[Category]([IdCourse] ASC); 	
 
 -- 3 stati: 
-	-- 1. done 
-	-- 2. todo 
-	-- 3. check 
+    -- 1. done 
+    -- 2. todo 
+    -- 3. check 
 CREATE TABLE [dbo].[StepStatus] ( 
-	[Id]     INT            IDENTITY (1, 1) NOT NULL, 
-	[Status] NVARCHAR (10) NOT NULL, 
-	CONSTRAINT [PK_StepStatus] PRIMARY KEY CLUSTERED ([Id] ASC) 
+    [Id]     INT            IDENTITY (1, 1) NOT NULL, 
+    [Status] NVARCHAR (10) NOT NULL, 
+    CONSTRAINT [PK_StepStatus] PRIMARY KEY CLUSTERED ([Id] ASC) 
 ); 
-	
+
 CREATE TABLE [dbo].[Step] ( 
-	[Id]             INT            IDENTITY (1, 1) NOT NULL, 
-	[Name]           NVARCHAR (255) NOT NULL, 
-	[Description]    NVARCHAR (MAX) NULL, 
-	[StartDate]      DATETIME2 (7)  NULL, 
-	[EndDate]        DATETIME2 (7)  NULL, 
-	[Lock]           BIT            DEFAULT ((1)) NULL, 
-	[NeedValidation] BIT            DEFAULT ((0)) NULL, 
-	[IdStatus]       INT            DEFAULT ((1)) NULL, 
-	[IdCategory]     INT            NOT NULL, 
-	CONSTRAINT [PK_Step] PRIMARY KEY CLUSTERED ([Id] ASC), 
-	CONSTRAINT [FK_Step_StepStatus_IdStatus]  
+    [Id]             INT            IDENTITY (1, 1) NOT NULL, 
+    [Name]           NVARCHAR (255) NOT NULL, 
+    [Description]    NVARCHAR (MAX) NULL, 
+    [StartDate]      DATETIME2 (7)  NULL, 
+    [EndDate]        DATETIME2 (7)  NULL, 
+    [Lock]           BIT            DEFAULT ((1)) NULL, 
+    [NeedValidation] BIT            DEFAULT ((0)) NULL, 
+    [IdStatus]       INT            DEFAULT ((1)) NULL, 
+    [IdCategory]     INT            NOT NULL, 
+    CONSTRAINT [PK_Step] PRIMARY KEY CLUSTERED ([Id] ASC), 
+    CONSTRAINT [FK_Step_StepStatus_IdStatus]  
 FOREIGN KEY ([IdStatus]) REFERENCES [dbo].[StepStatus] ([Id]) 
 ON DELETE CASCADE, 
-	CONSTRAINT [FK_Step_Category_IdCategory]  
+    CONSTRAINT [FK_Step_Category_IdCategory]  
 FOREIGN KEY ([IdCategory]) REFERENCES [dbo].[Category] ([Id]) 
 ON DELETE CASCADE 
 ); 
 GO 
 CREATE NONCLUSTERED INDEX [IX_Step_IdCategory] 
-	ON [dbo].[Step]([IdCategory] ASC); 
+    ON [dbo].[Step]([IdCategory] ASC); 
 GO 
 CREATE NONCLUSTERED INDEX [IX_Step_IdStatus] 
-	ON [dbo].[Step]([IdStatus] ASC); 
+    ON [dbo].[Step]([IdStatus] ASC); 
 
 CREATE TABLE [dbo].[UserCourse] ( 
-	[UserId]   NVARCHAR (450) NOT NULL, 
-	[CourseId] INT            NOT NULL, 
-	CONSTRAINT [FK_UserCourse_Course_CourseModel]  
+    [UserId]   NVARCHAR (450) NOT NULL, 
+    [CourseId] INT            NOT NULL, 
+    CONSTRAINT [FK_UserCourse_Course_CourseModel]  
 FOREIGN KEY ([CourseId]) REFERENCES [dbo].[Course] ([Id]) 
 ON DELETE CASCADE, 
-	CONSTRAINT [FK_UserCourse_AspNetUsers_UserId]  
+    CONSTRAINT [FK_UserCourse_AspNetUsers_UserId]  
 FOREIGN KEY ([UserId]) REFERENCES [dbo].[AspNetUsers] ([Id]) 
 ON DELETE CASCADE 
 ); 
@@ -76,7 +76,7 @@ CREATE NONCLUSTERED INDEX [IX_UserCourse_CourseModel]
 GO 
 CREATE NONCLUSTERED INDEX [IX_UserCourse_UserId] 
     ON [dbo].[UserCourse]([UserId] ASC); 
- 
+    
 CREATE TABLE [dbo].[CourseTemplate] ( 
     [Id]             INT            IDENTITY (1, 1) NOT NULL, 
     [Name]           NVARCHAR (255) NOT NULL, 
@@ -85,17 +85,17 @@ CREATE TABLE [dbo].[CourseTemplate] (
     [LastUpdateDate] DATETIME2 (7)  NULL, 
     CONSTRAINT [PK_CourseTemplate] PRIMARY KEY CLUSTERED ([Id] ASC) 
 ); 
- 
+    
 CREATE TABLE [dbo].[CategoryTemplate] ( 
     [Id]                INT         IDENTITY (1, 1) NOT NULL, 
     [name]              NCHAR (255) NOT NULL, 
     IDCourseTemplate INT         NOT NULL, 
     PRIMARY KEY CLUSTERED ([Id] ASC), 
     FOREIGN KEY (IDCourseTemplate)  
- REFERENCES [dbo].[CourseTemplate] ([Id]) 
- ON DELETE CASCADE 
+    REFERENCES [dbo].[CourseTemplate] ([Id]) 
+    ON DELETE CASCADE 
 ); 
- 
+    
 CREATE TABLE [dbo].[StepTemplate] ( 
     [Id]                 INT            IDENTITY (1, 1) NOT NULL, 
     [Name]               NVARCHAR (255) NOT NULL, 
@@ -104,8 +104,8 @@ CREATE TABLE [dbo].[StepTemplate] (
     [IDCategoryTemplate] INT            NOT NULL, 
     CONSTRAINT [PK_StepTemplate] PRIMARY KEY CLUSTERED ([Id] ASC), 
     CONSTRAINT [FK_StepTemplate_CategoryTemplate_IDCategoryTemplate]  
- FOREIGN KEY ([IDCategoryTemplate]) REFERENCES [dbo].[CategoryTemplate] ([Id]) 
- ON DELETE CASCADE 
+    FOREIGN KEY ([IDCategoryTemplate]) REFERENCES [dbo].[CategoryTemplate] ([Id]) 
+    ON DELETE CASCADE 
 ); 
 GO 
 CREATE NONCLUSTERED INDEX [IX_StepTemplate_IDCategoryTemplate] 

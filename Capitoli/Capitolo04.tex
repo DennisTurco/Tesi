@@ -113,10 +113,7 @@ stato necessario creare una connessione dal codice C\# al database attraverso
 la libreria \inlinecode{Microsoft.Data.SqlClient;}
 %
 %TODO: fixhere
-\begin{algorithm}[H]
-	\caption{classe per ottenere la stringa di connessione per il collegamento al database}
-	\label{lst:genic_mpi}
-	\begin{lstlisting}[label=lst:test]
+\begin{lstlisting}[style=cs_style, caption=classe per ottenere la stringa di connessione per il collegamento al database]
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 
@@ -149,8 +146,7 @@ namespace OnBoarding.Services
 
 	}
 }
-	\end{lstlisting}
-\end{algorithm}
+\end{lstlisting}
 %
 In questo modo, una volta che è stata stabilita una connessione, 
 è stato reso possibile il processo di scrittura di query. A titolo esemplificativo, si può menzionare 
@@ -159,10 +155,7 @@ quando viene fornito l'ID dell'utente come input, ha lo scopo principale di recu
 l'insieme completo dei corsi associati all'utente specificato.
 %
 %TODO: fixhere
-\begin{algorithm}[H]
-	\caption{esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper}
-	\label{lst:genic_mpi}
-	\begin{lstlisting}[label=lst:test]
+\begin{lstlisting}[style=cs_style, caption=esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper]
 public List<CourseModel> GetCourses(string userid)
 {
 	using (_connection = new SqlConnection(connectionService.GetconnectionString()))
@@ -181,8 +174,7 @@ public List<CourseModel> GetCourses(string userid)
 		return coursesList;
 	}
 } 
-	\end{lstlisting}
-\end{algorithm}
+\end{lstlisting}
 %
 Si osserva che ciascun utente può essere associato a più corsi, 
 stabilendo così una relazione uno a molti.\ Pertanto, è fondamentale 
@@ -208,68 +200,64 @@ utenti che detengono il privilegiato ruolo di ``Admin''.
 % TODO: add image
 %
 % TODO: fixhere
-% \begin{algorithm}[H]
-% 	\caption{esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper}
-% 	\label{lst:genic_mpi}
-% 	\begin{lstlisting}[label=lst:test]
-% [HttpGet]
-% [Authorize(Roles = "Admin")]
-% public IActionResult ExportToExcel(int id)
-% {
-% 	using (var workbook = new XLWorkbook())
-% 	{
-% 		CourseModel course = _courseManager.GetCourseByID(id);
+\begin{lstlisting}[style=cs_style, caption=esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper]
+[HttpGet]
+[Authorize(Roles = "Admin")]
+public IActionResult ExportToExcel(int id)
+{
+	using (var workbook = new XLWorkbook())
+	{
+		CourseModel course = _courseManager.GetCourseByID(id);
 
-% 		var ws = workbook.Worksheets.Add(course.Name); // Sheet Name
-% 		int i = 1;
+		var ws = workbook.Worksheets.Add(course.Name); // Sheet Name
+		int i = 1;
 
-% 		/////////////////////////////////////// Course
-% 		ws.Range($"A{i}:E{i}").Merge();
-% 		ws.Cell(i, 1).Value = "Course";
-% 		ws.Cell(i, 1).Style.Font.Bold = true;
-% 		ws.Cell(i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
-% 		ws.Cell(i, 1).Style.Font.FontSize = 30;
+		/////////////////////////////////////// Course
+		ws.Range($"A{i}:E{i}").Merge();
+		ws.Cell(i, 1).Value = "Course";
+		ws.Cell(i, 1).Style.Font.Bold = true;
+		ws.Cell(i, 1).Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+		ws.Cell(i, 1).Style.Font.FontSize = 30;
 
-% 		// Header
-% 		i++;
-% 		ws.Cell(i, 1).Value = "Id";
-% 		ws.Cell(i, 2).Value = "Name";
-% 		ws.Cell(i, 3).Value = "Completion";
-% 		ws.Cell(i, 4).Value = "StartDate";
-% 		ws.Cell(i, 5).Value = "EndDate";
-% 		ws.Range($"A{i}:E{i}").Style.Fill.BackgroundColor = XLColor.Alizarin;
+		// Header
+		i++;
+		ws.Cell(i, 1).Value = "Id";
+		ws.Cell(i, 2).Value = "Name";
+		ws.Cell(i, 3).Value = "Completion";
+		ws.Cell(i, 4).Value = "StartDate";
+		ws.Cell(i, 5).Value = "EndDate";
+		ws.Range($"A{i}:E{i}").Style.Fill.BackgroundColor = XLColor.Alizarin;
 
-% 		// Body
-% 		i++;
-% 		ws.Cell(i, 1).Value = course.Id;
-% 		ws.Cell(i, 2).Value = course.Name;
-% 		ws.Cell(i, 3).Value = course.Completion;
-% 		if (course.StartDate != DateTime.MinValue) ws.Cell(i, 4).Value = course.StartDate.ToString();
-% 		else { ws.Cell(i, 4).Value = "NULL"; ws.Cell(i, 4).Style.Font.FontColor = XLColor.Red; }
-% 		if (course.EndDate != DateTime.MinValue) ws.Cell(i, 5).Value = course.EndDate.ToString();
-% 		else { ws.Cell(i, 5).Value = "NULL"; ws.Cell(i, 5).Style.Font.FontColor = XLColor.Red; }
-% 		ws.Range($"A{i}:E{i}").Style.Fill.BackgroundColor = XLColor.AliceBlue;
-% 		i += 1;
+		// Body
+		i++;
+		ws.Cell(i, 1).Value = course.Id;
+		ws.Cell(i, 2).Value = course.Name;
+		ws.Cell(i, 3).Value = course.Completion;
+		if (course.StartDate != DateTime.MinValue) ws.Cell(i, 4).Value = course.StartDate.ToString();
+		else { ws.Cell(i, 4).Value = "NULL"; ws.Cell(i, 4).Style.Font.FontColor = XLColor.Red; }
+		if (course.EndDate != DateTime.MinValue) ws.Cell(i, 5).Value = course.EndDate.ToString();
+		else { ws.Cell(i, 5).Value = "NULL"; ws.Cell(i, 5).Style.Font.FontColor = XLColor.Red; }
+		ws.Range($"A{i}:E{i}").Style.Fill.BackgroundColor = XLColor.AliceBlue;
+		i += 1;
 
-% 		// ...
-% 		// Stesso procedimento appena descritto per i Corsi, viene fatto
-% 		// per le Categorie e gli Step 
-%		
-% 		using (var stream = new MemoryStream())
-% 		{
-% 			workbook.SaveAs(stream);
-% 			var content = stream.ToArray();
-% 			return File(
-% 					content,
-% 					"application/vnd.openxmlformats-officedocument-spreadsheetml.sheet",
-% 					course.Name + ".csv"
-% 				);
-% 		}
-% 	}
-% }
-% 	\end{lstlisting}
-% \end{algorithm}
-%
+		// ...
+		// Stesso procedimento appena descritto per i Corsi, viene fatto
+		// per le Categorie e gli Step 
+		
+		using (var stream = new MemoryStream())
+		{
+			workbook.SaveAs(stream);
+			var content = stream.ToArray();
+			return File(
+					content,
+					"application/vnd.openxmlformats-officedocument-spreadsheetml.sheet",
+					course.Name + ".csv"
+				);
+		}
+	}
+}
+\end{lstlisting}
+
 Un aspetto di notevole rilevanza è stato il processo di gestione dei dati statistici all'interno della pagina denominata 
 ``/Views/Statistics/Index.cshtml''.\ Questa pagina ha una funzione fondamentale poiché consente agli admin di visualizzare 
 l'insieme completo delle statistiche.\ Ciò è reso possibile grazie alla capacità di ordinare agevolmente le informazioni 
@@ -301,14 +289,11 @@ dei dati messe a disposizione dal linguaggio C\#.\
 In sostanza, il processo è stato il seguente: il codice JavaScript si è interfacciato con il codice C\# attraverso apposite funzioni getter, 
 ottenendo così i dati numerici necessari per alimentare i grafici.\
 % TODO: fix
-\begin{algorithm}[H]
- 	\caption{esempio sezione codice Javascript per la creazione di un grafico a barre per la rappresentazione dei dati}
- 	\label{lst:genic_mpi}
- 	\begin{lstlisting}[label=JavaScript]
+\begin{lstlisting}[style=javascript_style, caption=esempio sezione codice Javascript per la creazione di un grafico a barre per la rappresentazione dei dati]
 <script>
 	// ...
 	
-	/*-------------------------------- BAR CHART --------------------------------*/
+	// -------------------------------- BAR CHART
     var xValues = ["To Do", "Running", "Done"];
     var yValues = [@todo, @running, @done, 0];
     var barColors = ["red", "#e5e600", "green"];
@@ -333,8 +318,7 @@ ottenendo così i dati numerici necessari per alimentare i grafici.\
 
 	// ...
 </script>
- 	\end{lstlisting}
-\end{algorithm}
+\end{lstlisting}
 % TODO: add image
 %
 \section{Layout della piattaforma}\label{sec:cap_sec_subsec}
