@@ -20,16 +20,16 @@
 \contentsline {subsection}{\numberline {4.1.3}Interrogazioni al Database}{12}{subsection.4.1.3}%
 \contentsline {section}{\numberline {4.2}Scrittura del codice C\#}{14}{section.4.2}%
 \contentsline {section}{\numberline {4.3}Layout della piattaforma}{19}{section.4.3}%
-\contentsline {chapter}{\numberline {5}Risultati e sviluppi futuri}{21}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Risultati}{21}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Sviluppi fututi}{21}{section.5.2}%
-\contentsline {subsection}{\numberline {5.2.1}Pagina statistiche}{21}{subsection.5.2.1}%
-\contentsline {subsection}{\numberline {5.2.2}Ruoli utente}{22}{subsection.5.2.2}%
-\contentsline {subsection}{\numberline {5.2.3}Creazione dei Corsi}{22}{subsection.5.2.3}%
-\contentsline {subsection}{\numberline {5.2.4}Text editor}{23}{subsection.5.2.4}%
-\contentsline {subsection}{\numberline {5.2.5}Reportistica errori e commenti}{24}{subsection.5.2.5}%
-\contentsline {subsubsection}{Reportistica errori}{24}{section*.9}%
-\contentsline {subsubsection}{Commenti}{24}{section*.10}%
+\contentsline {chapter}{\numberline {5}Risultati e sviluppi futuri}{22}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Risultati}{22}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Sviluppi fututi}{22}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Pagina statistiche}{22}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Ruoli utente}{23}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Creazione dei Corsi}{23}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Text editor}{24}{subsection.5.2.4}%
+\contentsline {subsection}{\numberline {5.2.5}Reportistica errori e commenti}{25}{subsection.5.2.5}%
+\contentsline {subsubsection}{Reportistica errori}{25}{section*.11}%
+\contentsline {subsubsection}{Commenti}{25}{section*.12}%
 \contentsline {subsection}{\numberline {5.2.6}Layout della piattaforma}{25}{subsection.5.2.6}%
-\contentsline {chapter}{Conclusione}{26}{chapter*.11}%
-\contentsline {chapter}{\numberline {A}Scrittura del Database}{28}{appendix.Alph1}%
+\contentsline {chapter}{Conclusione}{27}{chapter*.13}%
+\contentsline {chapter}{\numberline {A}Scrittura del Database}{29}{appendix.Alph1}%
