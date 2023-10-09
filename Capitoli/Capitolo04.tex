@@ -1,15 +1,49 @@
 \chapter{Il progetto e il suo sviluppo}\label{chapter:formattazione}
 %
+\section{Tree Structure}\label{sec:cap_sec_subsec}
+
+La tree structure del progetto si suddivide in diverse sottocartelle.\\ 
+Di seguito, commenterò solo le cartelle che risultano rilevanti per la discussione:
+\begin{itemize}
+	\item \textbf{wwwroot}: Contiene file per la gestione della parte grafica, 
+	in particolare, include, in apposite sottocartelle, i file HTML, CSS, JavaScript e le immagini utilizzate. 
+	\item \textbf{Areas}: Contiene i file generati automaticamente dal framework ASP.NET Core Identity.
+	\item \textbf{Controllers}: Contiene i file scritti in linguaggio C\# che svolgono un 
+	ruolo fondamentale nella gestione delle richieste HTTP e nell'orchestrazione 
+	delle azioni dell'applicazione.\ Questi file fungono da punto di ingresso per 
+	le richieste HTTP, coordinano le azioni dell'applicazione, manipolano i dati e 
+	restituiscono risposte HTTP appropriate.
+	\item \textbf{Migrations}: Contiene i file in linguaggio C\# relativi alle migrations.
+	\item \textbf{Models}: Contiene solo file C\#, che vengono utilizzati per rappresentare 
+	le entità e i dati all'interno dell'applicazione, contribuendo così a mantenere il 
+	codice organizzato e coeso.
+	\item \textbf{Query}: Contiene esclusivamente file SQL, il cui utilizzo è ormai superato.\ 
+	I file contenuti in questa cartella non influenzano l'esecuzione della piattaforma.\
+	In particolare, questi file erano stati originariamente utilizzati per conservare le procedure, 
+	ma sono state successivamente rimpiazzate dall'uso del framework Dapper. 
+	\item \textbf{View}: Contiene numerosi file di tipo CSHTML, organizzati in diverse 
+	sottocartelle.\ Questi file sono responsabili di come i dati vengono presentati 
+	all'utente, gestendo l'aspetto, la struttura e l'interfaccia utente dell'applicazione.
+\end{itemize}
+%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.4\textwidth]{img/treeStructure.png}
+	\caption{tree structure del progetto}
+	\label{fig:one}
+\end{figure}
+%
 \section{Database}\label{sec:cap_sec_subsec}
 Una parte sostanziale del lavoro impiegato per portare a compimento il
 progetto si è concentrata in modo dettagliato sulla creazione del database,
 ritenuto elemento cruciale per assicurare il pieno funzionamento della
-piattaforma. \\ \\ La creazione del database è stata articolata in diverse fasi
-chiave:
+piattaforma. 
+\\ \\ 
+La creazione del database è stata articolata in diverse fasi chiave:
 \begin{itemize}
 	\item Progettazione della struttura del database, un processo attentamente studiato.
 	\item Scrittura del database in linguaggio SQL, una tappa essenziale per l'implementazione della struttura.
-	\item Implementazione delle interrogazioni al database nella sezione di backend,
+	\item Implementazione delle interrogazioni al database nella sezione di back-end,
 	      facendo uso della libreria Dapper.
 \end{itemize}
 \textit{Nota}: il database è stato creato e gestito unicamente in locale per questioni di semplicità e per
@@ -200,7 +234,7 @@ utenti che detengono il privilegiato ruolo di ``Admin''.
 % TODO: add image
 %
 % TODO: fixhere
-\begin{lstlisting}[style=cs_style, caption=esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper]
+\begin{lstlisting}[style=cs_style, caption=funzione utilizzata per l'esportazione in file exel]
 [HttpGet]
 [Authorize(Roles = "Admin")]
 public IActionResult ExportToExcel(int id)
