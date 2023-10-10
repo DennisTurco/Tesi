@@ -2,7 +2,7 @@
 %
 \section{Tree Structure}\label{sec:cap_sec_subsec}
 
-La tree structure del progetto si suddivide in diverse sottocartelle.\\ 
+La tree structure~\ref{fig:treeStructure} del progetto si suddivide in diverse sottocartelle.\\ 
 Di seguito, commenterò solo le cartelle che risultano rilevanti per la discussione:
 \begin{itemize}
 	\item \textbf{wwwroot}: Contiene file per la gestione della parte grafica, 
@@ -30,7 +30,7 @@ Di seguito, commenterò solo le cartelle che risultano rilevanti per la discussi
 	\centering
 	\includegraphics[width=0.4\textwidth]{img/treeStructure.png}
 	\caption{tree structure del progetto}
-	\label{fig:one}
+	\label{fig:treeStructure}
 \end{figure}
 %
 \section{Database}\label{sec:cap_sec_subsec}
@@ -50,7 +50,7 @@ La creazione del database è stata articolata in diverse fasi chiave:
 l'esecuzione di test sulla correttezza della struttura e dell'implementazione del database stesso.
 %
 \subsection{Progettazione}
-La fase di progettazione~\ref{fig:one} del database ha occupato un ruolo
+La fase di progettazione~\ref{fig:progettazione_database} del database ha occupato un ruolo
 fondamentale nel corso di questo processo, coinvolgendo un'analisi costante e
 una riflessione profonda. L'obbiettivo principale è stato quello di plasmare un
 database estremamente completo, in grado di soddisfare appieno le esigenze
@@ -64,7 +64,7 @@ della piattaforma di e-learning, ponendosi lo scopo aggiuntivo di:
 	\centering
 	\includegraphics[width=1\textwidth]{img/progettazione_database.png}
 	\caption{progettazione del database}
-	\label{fig:one}
+	\label{fig:progettazione_database}
 \end{figure}
 \textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono
 gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già
@@ -77,7 +77,7 @@ perchè esse vengono gestite in maniera del tutto indipendente con le altre info
 	\centering
 	\includegraphics[width=0.5\textwidth]{img/TreeStructureDatabase.png}
 	\caption{Tree structure del database}
-	\label{fig:two}
+	\label{fig:TreeStructureDatabase}
 \end{figure}
 %
 \subsection{Scrittura nel linguaggio SQL}
@@ -299,7 +299,7 @@ presenti all'interno delle tabelle.\ Questa caratteristica permette agli utenti 
 specifiche esigenze e criteri di ricerca.
 \\
 Inoltre, per rendere l'esperienza ancora più interattiva e informativa, è stata inclusa una sezione di codice dedicata 
-direttamente all'interno della pagina stessa, utilizzando il tag \inlinecode{<script>\dots</script>}. Questo approccio ha 
+direttamente all'interno della pagina stessa, utilizzando il tag \inlinecode{\textless\ script \textgreater\ \dots \textless\ /script \textgreater}. Questo approccio ha 
 consentito di incorporare efficacemente dei grafici che offrono una rappresentazione visiva dei dati statistici.\ 
 Questi grafici sono stati sviluppati in modo da offrire quattro diverse visualizzazioni, ognuna delle quali fornisce un'analisi 
 dettagliata dei dati statistici, permettendo agli utenti di comprendere meglio i pattern e le tendenze sottostanti.
@@ -322,7 +322,6 @@ Questo approccio è stato adottato per garantire l'accuratezza e la coerenza dei
 dei dati messe a disposizione dal linguaggio C\#.\
 In sostanza, il processo è stato il seguente: il codice JavaScript si è interfacciato con il codice C\# attraverso apposite funzioni getter, 
 ottenendo così i dati numerici necessari per alimentare i grafici.\
-% TODO: fix
 \begin{lstlisting}[style=javascript_style, caption=esempio sezione codice Javascript per la creazione di un grafico a barre per la rappresentazione dei dati]
 <script>
 	// ...
@@ -386,15 +385,16 @@ incaricati della creazione dei corsi.
 		\caption{visualizzazione in Markdown}
 	\end{subfigure}
 	\caption{esempio di scrittura e visualizzazione in Markdown}
-	\label{fig:two}
+	\label{fig:markdown}
 \end{figure}
+%
 \\
 Inoltre, per agevolare l'utilizzo di questa funzionalità, è stato incluso un apposito 
-messaggio pop-up che fornisce una semplice guida all'uso, completa di esempi pratici, 
+messaggio pop-up~\ref{fig:markdownGuide} che fornisce una semplice guida all'uso, completa di esempi pratici, 
 al fine di consentire agli utenti di sfruttarla al meglio.
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=0.7\textwidth]{img/markdownGuide.png}
 	\caption{Guida basilare al Markdown}
-	\label{fig:one}
+	\label{fig:markdownGuide}
 \end{figure}

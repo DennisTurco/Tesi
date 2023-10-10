@@ -11,7 +11,7 @@
 \contentsline {subsection}{\numberline {3.1.4}Git}{8}{subsection.3.1.4}%
 \contentsline {section}{\numberline {3.2}Linguaggi}{8}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}SQL}{8}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}C\#}{8}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.2}C\#}{9}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}HTML, CSS, JavaScript}{9}{subsection.3.2.3}%
 \contentsline {chapter}{\numberline {4}Il progetto e il suo sviluppo}{10}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Tree Structure}{10}{section.4.1}%
