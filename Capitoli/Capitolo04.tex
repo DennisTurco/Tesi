@@ -228,12 +228,18 @@ dovrà essere convertito in una collezione di oggetti dello stesso tipo (attrave
 Un punto di particolare rilevanza che merita menzione è rappresentato dallo sviluppo di una classe denominata 
 ``StatisticsController.cs''.\ Il suo scopo principale consiste nell'elaborare in modo esaustivo e dettagliato tutte 
 le statistiche associate a un utente specifico.\ Questa classe si avvale della sofisticata libreria \inlinecode{ClosedXML.Excel;} 
-per generare dati statistici inerenti al completamento dei corsi che sono stati non solo avviati, ma anche portati a 
+per generare dati statistici in formato csv~\ref{fig:exportToExcel}, inerenti al completamento dei corsi che sono stati non solo avviati, ma anche portati a 
 termine dall'utente in questione.\ È essenziale sottolineare che questa funzionalità è rigorosamente riservata agli 
 utenti che detengono il privilegiato ruolo di ``Admin''.
-% TODO: add image
 %
-% TODO: fixhere
+% TODO: fix position
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/exportToExcel.png}
+	\caption{esempio di conversione in csv}
+	\label{fig:exportToExcel}
+\end{figure}
+%
 \begin{lstlisting}[style=cs_style, caption=funzione utilizzata per l'esportazione in file exel]
 [HttpGet]
 [Authorize(Roles = "Admin")]
@@ -291,7 +297,7 @@ public IActionResult ExportToExcel(int id)
 	}
 }
 \end{lstlisting}
-
+%
 Un aspetto di notevole rilevanza è stato il processo di gestione dei dati statistici all'interno della pagina denominata 
 ``/Views/Statistics/Index.cshtml''.\ Questa pagina ha una funzione fondamentale poiché consente agli admin di visualizzare 
 l'insieme completo delle statistiche.\ Ciò è reso possibile grazie alla capacità di ordinare agevolmente le informazioni 
@@ -352,7 +358,13 @@ ottenendo così i dati numerici necessari per alimentare i grafici.\
 	// ...
 </script>
 \end{lstlisting}
-% TODO: add image
+%
+\begin{figure}[ht]
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/charts.png}
+	\caption{grafici per la visualizzazione dei dati}
+	\label{fig:charts}
+\end{figure}
 %
 \section{Layout della piattaforma}\label{sec:cap_sec_subsec}
 Nonostante alcune limitazioni evidenti nel design della piattaforma, che potrebbe essere descritto come non completamente moderno e, 

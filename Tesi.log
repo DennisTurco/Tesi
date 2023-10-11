@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  10 OCT 2023 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  11 OCT 2023 20:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1078,7 +1078,7 @@ Overfull \hbox (12.88509pt too wide) in paragraph at lines 10--11
 
 
 ]
-<img/treeStructure.png, id=305, 190.46156pt x 262.73157pt>
+<img/treeStructure.png, id=309, 190.46156pt x 262.73157pt>
 File: img/treeStructure.png Graphic file (type png)
 <use img/treeStructure.png>
 Package pdftex.def Info: img/treeStructure.png  used on input line 31.
@@ -1096,12 +1096,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [11 <./img/treeStructure.png>]
-<img/progettazione_database.png, id=313, 1276.77pt x 693.59125pt>
+<img/progettazione_database.png, id=317, 1276.77pt x 693.59125pt>
 File: img/progettazione_database.png Graphic file (type png)
 <use img/progettazione_database.png>
 Package pdftex.def Info: img/progettazione_database.png  used on input line 65.
 (pdftex.def)             Requested size: 390.0pt x 211.85722pt.
-<img/TreeStructureDatabase.png, id=314, 324.46219pt x 596.2275pt>
+<img/TreeStructureDatabase.png, id=318, 324.46219pt x 596.2275pt>
 File: img/TreeStructureDatabase.png Graphic file (type png)
 <use img/TreeStructureDatabase.png>
 Package pdftex.def Info: img/TreeStructureDatabase.png  used on input line 78.
@@ -1165,8 +1165,13 @@ LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <10.95> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 193.
 LaTeX Font Info:    Font shape `OML/cmr/m/n' in size <12> not available
 (Font)              Font shape `OML/cmm/m/it' tried instead on input line 215.
+<img/exportToExcel.png, id=367, 454.69875pt x 453.19313pt>
+File: img/exportToExcel.png Graphic file (type png)
+<use img/exportToExcel.png>
+Package pdftex.def Info: img/exportToExcel.png  used on input line 238.
+(pdftex.def)             Requested size: 272.99881pt x 272.09776pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 213--237
+Underfull \hbox (badness 10000) in paragraph at lines 213--243
 
  []
 
@@ -1193,7 +1198,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18]
+[18 <./img/exportToExcel.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1202,36 +1207,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [19]
-<img/markdown_p1.png, id=466, 770.12718pt x 619.56468pt>
-File: img/markdown_p1.png Graphic file (type png)
-<use img/markdown_p1.png>
-Package pdftex.def Info: img/markdown_p1.png  used on input line 380.
-(pdftex.def)             Requested size: 163.80095pt x 131.77628pt.
-
-Overfull \hbox (46.79976pt too wide) in paragraph at lines 380--381
-[][] 
- []
-
-<img/markdown_pt2.png, id=467, 770.88pt x 618.05907pt>
-File: img/markdown_pt2.png Graphic file (type png)
-<use img/markdown_pt2.png>
-Package pdftex.def Info: img/markdown_pt2.png  used on input line 384.
-(pdftex.def)             Requested size: 163.80095pt x 131.32402pt.
-
-Overfull \hbox (46.79976pt too wide) in paragraph at lines 384--385
-[][] 
- []
-
-<img/markdownGuide.png, id=469, 1031.855pt x 915.42pt>
-File: img/markdownGuide.png Graphic file (type png)
-<use img/markdownGuide.png>
-Package pdftex.def Info: img/markdownGuide.png  used on input line 397.
-(pdftex.def)             Requested size: 272.99881pt x 242.19403pt.
-)
-Underfull \hbox (badness 10000) in paragraph at lines 358--92
-
- []
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1240,6 +1215,41 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [20]
+<img/charts.png, id=499, 869.49844pt x 508.90125pt>
+File: img/charts.png Graphic file (type png)
+<use img/charts.png>
+Package pdftex.def Info: img/charts.png  used on input line 364.
+(pdftex.def)             Requested size: 272.99881pt x 159.78447pt.
+<img/markdown_p1.png, id=500, 770.12718pt x 619.56468pt>
+File: img/markdown_p1.png Graphic file (type png)
+<use img/markdown_p1.png>
+Package pdftex.def Info: img/markdown_p1.png  used on input line 392.
+(pdftex.def)             Requested size: 163.80095pt x 131.77628pt.
+
+Overfull \hbox (46.79976pt too wide) in paragraph at lines 392--393
+[][] 
+ []
+
+<img/markdown_pt2.png, id=501, 770.88pt x 618.05907pt>
+File: img/markdown_pt2.png Graphic file (type png)
+<use img/markdown_pt2.png>
+Package pdftex.def Info: img/markdown_pt2.png  used on input line 396.
+(pdftex.def)             Requested size: 163.80095pt x 131.32402pt.
+
+Overfull \hbox (46.79976pt too wide) in paragraph at lines 396--397
+[][] 
+ []
+
+<img/markdownGuide.png, id=503, 1031.855pt x 915.42pt>
+File: img/markdownGuide.png Graphic file (type png)
+<use img/markdownGuide.png>
+Package pdftex.def Info: img/markdownGuide.png  used on input line 409.
+(pdftex.def)             Requested size: 272.99881pt x 242.19403pt.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 370--92
+
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1247,7 +1257,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21 <./img/markdown_p1.png> <./img/markdown_pt2.png>]
+[21 <./img/charts.png>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1255,7 +1265,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22 <./img/markdownGuide.png (PNG copy)>]
+[22 <./img/markdown_p1.png> <./img/markdown_pt2.png>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[23 <./img/markdownGuide.png (PNG copy)>]
 \openout2 = `Capitoli/Capitolo05.aux'.
 
  (Capitoli/Capitolo05.tex
@@ -1280,7 +1298,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 25--40
 
  []
 
-[23
+[24
 
 
 
@@ -1313,8 +1331,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
-<img/textEditor.png, id=518, 381.8265pt x 96.96225pt>
+[25]
+<img/textEditor.png, id=531, 381.8265pt x 96.96225pt>
 File: img/textEditor.png Graphic file (type png)
 <use img/textEditor.png>
 Package pdftex.def Info: img/textEditor.png  used on input line 82.
@@ -1331,7 +1349,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25 <./img/textEditor.png>])
+[26 <./img/textEditor.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 112--93
 
  []
@@ -1346,14 +1364,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 112--93
 
  []
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[26]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1362,9 +1372,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [27]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28]
 \openout2 = `Capitoli/Conclusione.aux'.
 
- (Capitoli/Conclusione.tex) [28
+ (Capitoli/Conclusione.tex) [29
 
 
 
@@ -1373,7 +1391,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 ]
 \openout2 = `Capitoli/Ringraziamenti.aux'.
 
- (Capitoli/Ringraziamenti.tex) [29
+ (Capitoli/Ringraziamenti.tex) [30
 
 
 
@@ -1386,13 +1404,13 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 Appendice A.
 (C:\Program Files\MiKTeX\tex/latex/listings\lstlang1.sty
 File: lstlang1.sty 2023/02/27 1.9 listings language file
-) [30
+) [31
 
 
 
 
 
-] [31]) [32] (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Capitolo01.aux) (Capitoli/Capitolo02.aux) (Capitoli/Capitolo03.aux) (Capitoli/Capitolo04.aux) (Capitoli/Capitolo05.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
+] [32]) [33] (Tesi.aux (Capitoli/Introduzione.aux) (Capitoli/Capitolo01.aux) (Capitoli/Capitolo02.aux) (Capitoli/Capitolo03.aux) (Capitoli/Capitolo04.aux) (Capitoli/Capitolo05.aux) (Capitoli/Conclusione.aux) (Capitoli/Ringraziamenti.aux) (Capitoli/Appendici/Appendice1.aux))
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-29>
@@ -1402,20 +1420,20 @@ L3 programming layer <2023-08-29>
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Tesi.out' has not changed.
-(rerunfilecheck)             Checksum: 394B84CC3CBE68D7F41293BFCF238614;2250.
+(rerunfilecheck)             Checksum: F5C9BFF5ED701CEC4233483BDCFDC3E1;2250.
  ) 
 Here is how much of TeX's memory you used:
- 31238 strings out of 475247
- 552548 string characters out of 5767604
+ 31257 strings out of 475247
+ 552961 string characters out of 5767604
  2353801 words of memory out of 5000000
- 51824 multiletter control sequences out of 15000+600000
+ 51840 multiletter control sequences out of 15000+600000
  567621 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,12n,127p,603b,3774s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Tesi.pdf (37 pages, 646395 bytes).
+Output written on Tesi.pdf (38 pages, 724576 bytes).
 PDF statistics:
- 803 PDF objects out of 1000 (max. 8388607)
- 359 named destinations out of 1000 (max. 500000)
- 321 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 818 PDF objects out of 1000 (max. 8388607)
+ 362 named destinations out of 1000 (max. 500000)
+ 331 words of extra memory for PDF output out of 10000 (max. 10000000)
 
