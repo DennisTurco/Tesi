@@ -24,7 +24,8 @@
 \usepackage{afterpage}
 \usepackage[pass]{geometry}       %% showframe just for demo
 
-
+\usepackage{microtype}  % migliora la scrittura a livello grafico
+\usepackage[indent=0pt]{parskip} %migliora l'indentazione e definisce lo spazio verticale
 
 %%%%%%%%%%% Other commands%%%%%%%%%%%
 %to keep floats (images, tables, etc.) within subsections
