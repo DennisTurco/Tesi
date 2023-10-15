@@ -1,1 +1,103 @@
-\chapter{Il modello dell'OnBoarding nell'azienda}\label{chapter:formattazione}
+\chapter{Le tecnologie utilizzate}\label{chapter:formattazione}
+%
+Il progetto di creazione della piattaforma di e-learning per la gestione del processo di 
+OnBoarding aziendale è stato realizzato utilizzando molteplici tecnologie, servizi e linguaggi:
+%
+\section{Tecnologie e Servizi}\label{sec:cap_sec_subsec}
+\begin{enumerate}
+    \item ASP.NET MVC 6.0;
+    \item Autenticazione;
+    \item GitHub;
+    \item Git;
+\end{enumerate}
+\subsection{ASP.NET MVC 6.0}\label{sec:cap_sec_subsec}
+ASP.NET Core MVC è un ricco framework creato da Microsoft per la creazione di applicazioni web e API 
+utilizzando il modello di progettazione Model-View-Controller.
+\begin{itemize}
+    \item Model: Il back-end che contiene tutta la logica dei dati;
+    \item View: interfaccia utente front-end o grafica (GUI);
+    \item Controller: Il ``cervello'' dell'applicazione che controlla come vengono visualizzati i dati.
+\end{itemize}
+\subsection{Autenticazione con ``Identity''}\label{sec:cap_sec_subsec}
+Siccome il progetto in questione riguarda la creazione di una piattaforma web, è stato necessario
+implementare il servizio di Autenticazione attraverso il framework ASP.NET Core Identity, al
+fine di otterenere non soltanto la possibilità di permettere le azioni di login e registrazione da parte degli utenti, ma
+anche di farlo ottenendo una sicurezza dei dati sensibili. 
+\\ \\
+In particolare la forma di Autenticazione utilizzata nella piattaforma è una ``Forms Authentication'', ovvero, è quel tipo di
+autenticazione nella quale l'utente deve fornire le proprie credenziali attraverso un form dedicato. 
+\\ \\
+ASP.NET Core Identity è un API che supporta funzionalità di login lato UI.\ Gestisce utenti,
+password, dati del profilo, ruoli, email di conferma e molto altro. \\
+In particolare, gli utenti possono creare un account con le informazioni di accesso memorizzate in Identity 
+o possono utilizzare un provider di accesso esterno (es. Facebook, Google, ecc\dots ).
+\\ \\
+\textit{Nota:} L'algoritmo utilizzato dal servizio Identity per criptare le password è PBKDF2 (Password-Based Key Derivation Function 2):
+\begin{lstlisting}[style=cs_style, caption=algoritmo di hashing per criptare le password usato dal servizio Identity]
+public static string HashPassword(string password)
+{
+    byte[] salt;
+    byte[] bytes;
+    if (password == null)
+    {
+        throw new ArgumentNullException("password");
+    }
+    using (Rfc2898DeriveBytes rfc2898DeriveByte = new Rfc2898DeriveBytes(password, 16, 1000))
+    {
+        salt = rfc2898DeriveByte.Salt;
+        bytes = rfc2898DeriveByte.GetBytes(32);
+    }
+    byte[] numArray = new byte[49];
+    Buffer.BlockCopy(salt, 0, numArray, 1, 16);
+    Buffer.BlockCopy(bytes, 0, numArray, 17, 32);
+    return Convert.ToBase64String(numArray);
+}
+    \end{lstlisting}
+
+
+\subsection{GitHub}\label{sec:cap_sec_subsec}
+Il progetto durante il suo sviluppo è stato salvato in un'apposità repository privata
+su GitHub. \\
+GitHub è stato fondamentale per tenere una traccia storica di tutte le
+modifiche apportate nel corso del tempo, in risposta all'esecuzione dei vari task assegnati. \\
+Esso non si è limitato ad essere un semplice strumento a d'uso esclusivamente
+individuale, ma ha permesso la condivisione del lavoro sia con il tutor 
+aziendale che con il resto del personale.
+\subsection{Git}\label{sec:cap_sec_subsec}
+In parallelo all'utilizzo di GitHub è stato impiegato il software di controllo di versione Git 
+con l'obbiettivo di agevolare l'aggiornamento dei file del progetto dalla workspace locale verso 
+la repository privata che ospita il progetto, tramite appositi commit.
+\section{Linguaggi}\label{sec:cap_sec_subsec}
+\begin{enumerate}
+    \item SQL;
+    \item C\#;
+    \item HTML, CSS, JavaScript;
+\end{enumerate}
+%
+\subsection{SQL}\label{sec:cap_sec_subsec}
+Il linguaggio SQL è stato utilizzato per 
+la creazione del database del sito web.\ Il database contiene tutte le informazioni 
+necessarie per la corretta gestione della piattaforma, tra cui i dati relativi agli utenti 
+registrati, ai corsi e alle categorie dei corsi.
+%
+\subsection{C\#}\label{sec:cap_sec_subsec}
+Il linguaggio C\# è stato utilizzato per la gestione della parte back-end del sito, 
+creando un dialogo tra le informazioni contenute nel database e l'interfaccia utente.\
+L'accesso ai dati del database tramite il linguaggio C\# è stato possibile grazie 
+al framework ``Dapper'', che consente di eseguire interrogazioni in modo efficace ed 
+efficiente.\ In questo modo, il sito è più responsivo anche in caso di grandi quantità di 
+dati da gestire, eliminando elementi come le procedure, che risultano meno 
+manutenibili e più complicate da gestire a causa di una complicazione del codice nella 
+parte back-end per il loro utilizzo. 
+\\ \\
+Il linguaggio C\# è stato anche utilizzato per la 
+gestione degli eventi, la navigazione tra le pagine e i controlli di vario genere.\
+L'utilizzo di molteplici 
+tecnologie ha permesso di ottenere un prodotto completo e funzionale, in grado di 
+soddisfare le esigenze dell'azienda e dei nuovi dipendenti.
+%
+\subsection{HTML, CSS, JavaScript}\label{sec:cap_sec_subsec}
+Per la gestione dell'interfaccia utente, sono stati utilizzati il linguaggio HTML, il 
+linguaggio CSS e il linguaggio JavaScript.\ Il linguaggio HTML è stato utilizzato per la 
+creazione della struttura del sito, il linguaggio CSS per la gestione dello stile e il 
+linguaggio JavaScript per la gestione degli eventi.
