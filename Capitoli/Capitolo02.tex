@@ -32,7 +32,7 @@ password, dati del profilo, ruoli, email di conferma e molto altro. \\
 In particolare, gli utenti possono creare un account con le informazioni di accesso memorizzate in Identity 
 o possono utilizzare un provider di accesso esterno (es. Facebook, Google, ecc\dots ).
 \\ \\
-\textit{Nota:} L'algoritmo utilizzato dal servizio Identity per criptare le password è PBKDF2 (Password-Based Key Derivation Function 2):
+\textit{Nota}: L'algoritmo utilizzato dal servizio Identity per criptare le password è PBKDF2 (Password-Based Key Derivation Function 2):
 \begin{lstlisting}[style=cs_style, caption=algoritmo di hashing per criptare le password usato dal servizio Identity]
 public static string HashPassword(string password)
 {

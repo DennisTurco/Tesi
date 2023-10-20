@@ -63,14 +63,12 @@ della piattaforma di e-learning, ponendosi lo scopo aggiuntivo di:
 \begin{figure}[ht]
 	\centering
 	\includegraphics[width=\textwidth]{img/progettazione_database.png}
-	\caption{progettazione del database}
+	\caption[progettazione del database]{la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono
+	gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già
+	incluso (libreria \inlinecode{Microsoft.AspNet.Identity.EntityFramework;}).}
 	\label{fig:progettazione_database}
 \end{figure}
-\textit{Nota}: la progettazione mostrata non tiene traccia delle tabelle utente, perchè vengono
-gestite automaticamente dal progetto .NET grazie al servizio di autenticazione già
-incluso (libreria \inlinecode{Microsoft.AspNet.Identity.EntityFramework;}).
 %
-\\ \\
 Si noti, inoltre, che non è stato creato un collegamento tra le tabelle “*Templates” con il resto del tabelle
 perchè esse vengono gestite in maniera del tutto indipendente con le altre informazioni e relazioni presenti.
 \begin{figure}[ht]

@@ -27,6 +27,10 @@
 \usepackage{microtype}  % migliora la scrittura a livello grafico
 \usepackage[indent=0pt]{parskip} %migliora l'indentazione e definisce lo spazio verticale
 
+
+\newcommand\fnote[1]{\captionsetup{font=small}\caption*{#1}}
+
+
 %%%%%%%%%%% Other commands%%%%%%%%%%%
 %to keep floats (images, tables, etc.) within subsections
 \makeatletter
