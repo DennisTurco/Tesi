@@ -17,19 +17,19 @@
 \contentsline {section}{\numberline {3.2}Database}{13}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}Progettazione}{14}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Scrittura nel linguaggio SQL}{15}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Interrogazioni al Database}{15}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Interrogazioni al Database}{16}{subsection.3.2.3}%
 \contentsline {section}{\numberline {3.3}Scrittura del codice C\#}{17}{section.3.3}%
-\contentsline {section}{\numberline {3.4}Layout della piattaforma}{23}{section.3.4}%
-\contentsline {chapter}{\numberline {4}Risultati e sviluppi futuri}{26}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Risultati}{26}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sviluppi fututi}{27}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Pagina statistiche}{27}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}Ruoli utente}{28}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Creazione dei Corsi}{28}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Text editor}{29}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Reportistica errori e commenti}{30}{subsection.4.2.5}%
-\contentsline {subsubsection}{Reportistica errori}{30}{section*.14}%
-\contentsline {subsubsection}{Commenti}{30}{section*.15}%
-\contentsline {subsection}{\numberline {4.2.6}Layout della piattaforma}{31}{subsection.4.2.6}%
-\contentsline {chapter}{Conclusione}{32}{chapter*.16}%
-\contentsline {chapter}{\numberline {A}Scrittura del Database}{35}{appendix.Alph1}%
+\contentsline {section}{\numberline {3.4}Layout della piattaforma}{24}{section.3.4}%
+\contentsline {chapter}{\numberline {4}Risultati e sviluppi futuri}{27}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Risultati}{27}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Sviluppi fututi}{28}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pagina statistiche}{28}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Ruoli utente}{29}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Creazione dei Corsi}{29}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Text editor}{30}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Reportistica errori e commenti}{31}{subsection.4.2.5}%
+\contentsline {subsubsection}{Reportistica errori}{31}{section*.14}%
+\contentsline {subsubsection}{Commenti}{31}{section*.15}%
+\contentsline {subsection}{\numberline {4.2.6}Layout della piattaforma}{32}{subsection.4.2.6}%
+\contentsline {chapter}{Conclusione}{33}{chapter*.16}%
+\contentsline {chapter}{\numberline {A}Scrittura del Database}{36}{appendix.Alph1}%
