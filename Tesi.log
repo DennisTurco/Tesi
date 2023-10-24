@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  21 OCT 2023 13:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.5) (preloaded format=pdflatex 2023.9.11)  24 OCT 2023 11:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1555,17 +1555,17 @@ Package rerunfilecheck Info: File `Tesi.out' has not changed.
 (rerunfilecheck)             Checksum: 74B959CF28211D9038104A6FCB48DE7C;2166.
  ) 
 Here is how much of TeX's memory you used:
- 33358 strings out of 475247
- 588203 string characters out of 5767604
+ 33352 strings out of 475247
+ 588122 string characters out of 5767604
  2373801 words of memory out of 5000000
- 53746 multiletter control sequences out of 15000+600000
- 572759 words of font info for 156 fonts, out of 8000000 for 9000
+ 53744 multiletter control sequences out of 15000+600000
+ 572194 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  107i,12n,127p,1030b,3782s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1095.pk> <C:\Users\Utente\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on Tesi.pdf (43 pages, 816853 bytes).
+Output written on Tesi.pdf (43 pages, 816632 bytes).
 PDF statistics:
  843 PDF objects out of 1000 (max. 8388607)
  368 named destinations out of 1000 (max. 500000)
- 41805 words of extra memory for PDF output out of 42996 (max. 10000000)
+ 39757 words of extra memory for PDF output out of 42996 (max. 10000000)
 
