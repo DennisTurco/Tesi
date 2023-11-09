@@ -22,14 +22,14 @@
 \contentsline {section}{\numberline {3.4}Layout della piattaforma}{24}{section.3.4}%
 \contentsline {chapter}{\numberline {4}Risultati e sviluppi futuri}{27}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Risultati}{27}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Sviluppi fututi}{28}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Pagina statistiche}{28}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.2}Sviluppi fututi}{29}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Pagina statistiche}{29}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}Ruoli utente}{29}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}Creazione dei Corsi}{29}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}Text editor}{30}{subsection.4.2.4}%
-\contentsline {subsection}{\numberline {4.2.5}Reportistica errori e commenti}{31}{subsection.4.2.5}%
-\contentsline {subsubsection}{Reportistica errori}{31}{section*.15}%
-\contentsline {subsubsection}{Commenti}{31}{section*.16}%
+\contentsline {subsection}{\numberline {4.2.3}Creazione dei Corsi}{30}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Text editor}{31}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Reportistica errori e commenti}{32}{subsection.4.2.5}%
+\contentsline {subsubsection}{Reportistica errori}{32}{section*.16}%
+\contentsline {subsubsection}{Commenti}{32}{section*.17}%
 \contentsline {subsection}{\numberline {4.2.6}Layout della piattaforma}{32}{subsection.4.2.6}%
-\contentsline {chapter}{Conclusione}{33}{chapter*.17}%
-\contentsline {chapter}{\numberline {A}Scrittura del Database}{36}{appendix.Alph1}%
+\contentsline {chapter}{Conclusione}{34}{chapter*.18}%
+\contentsline {chapter}{\numberline {A}Scrittura del Database}{37}{appendix.Alph1}%

@@ -2,7 +2,7 @@
 %
 \section{Tree Structure}\label{sec:cap_sec_subsec}
 
-La tree structure~\ref{fig:treeStructure} del progetto si suddivide in diverse sottocartelle.\\ 
+La tree structure (figura~\ref{fig:treeStructure}) del progetto si suddivide in diverse sottocartelle.\\ 
 Di seguito, commenterò solo le cartelle che risultano rilevanti per la discussione:
 \begin{itemize}
 	\item \textbf{wwwroot}: Contiene file per la gestione della parte grafica, 
@@ -50,7 +50,7 @@ La creazione del database è stata articolata in diverse fasi chiave:
 l'esecuzione di test sulla correttezza della struttura e dell'implementazione del database stesso.
 %
 \subsection{Progettazione}
-La fase di progettazione~\ref{fig:progettazione_database} del database ha occupato un ruolo
+La fase di progettazione (figura~\ref{fig:progettazione_database}) del database ha occupato un ruolo
 fondamentale nel corso di questo processo, coinvolgendo un'analisi costante e
 una riflessione profonda. L'obbiettivo principale è stato quello di plasmare un
 database estremamente completo, in grado di soddisfare appieno le esigenze
@@ -79,9 +79,9 @@ perchè esse vengono gestite in maniera del tutto indipendente con le altre info
 \end{figure}
 %
 \subsection{Scrittura nel linguaggio SQL}
-Il risultato finale di questa fase è il seguente~\ref{appendice-database} (non sono riportate le tabelle
-generate dal servizio di Autenticazione, perchè gestite automaticamente dalla
-libreria a disposizione)
+Il risultato finale di questa fase è possibile visualizzarlo nella sezione appendice di questo elaborato (appendice~\ref{appendice-database}).\\ 
+\textit{Nota}: non sono riportate le tabelle generate dal servizio di Autenticazione, perchè gestite automaticamente dalla
+libreria a disposizione.
 %
 \subsection{Interrogazioni al Database}
 Inizialmente, le interrogazioni al database erano state sviluppate attraverso
@@ -143,7 +143,6 @@ Per eseguire delle query al database è
 stato necessario creare una connessione dal codice C\# al database attraverso
 la libreria \inlinecode{Microsoft.Data.SqlClient;}
 %
-%TODO: fixhere
 \begin{lstlisting}[style=cs_style, caption=classe per ottenere la stringa di connessione per il collegamento al database]
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
@@ -379,7 +378,7 @@ e soddisfacente per tutti i suoi utilizzatori.
 \end{figure}
 
 Un'aggiunta di notevole interesse dal punto di vista del layout è stata l'integrazione 
-della visualizzazione in sintassi Markdown (grazie all'utilizzo dei tag \inlinecode{\textless md-block\textgreater} e \inlinecode{\textless md-span\textgreater}).\
+della visualizzazione in sintassi Markdown (figura~\ref{fig:markdown}) (grazie all'utilizzo dei tag \inlinecode{\textless md-block\textgreater} e \inlinecode{\textless md-span\textgreater}).\
 Questa nuova funzionalità mira a migliorare 
 l'esperienza dell'utente durante la visualizzazione delle descrizioni delle informazioni 
 testuali presenti all'interno dei corsi.\ L'obiettivo è ottenere una visualizzazione che 
@@ -411,7 +410,7 @@ incaricati della creazione dei corsi.
 \end{figure}
 
 Inoltre, per agevolare l'utilizzo di questa funzionalità, è stato incluso un apposito 
-messaggio pop-up~\ref{fig:markdownGuide} che fornisce una semplice guida all'uso, completa di esempi pratici, 
+messaggio pop-up (figura~\ref{fig:markdownGuide}) che fornisce una semplice guida all'uso, completa di esempi pratici, 
 al fine di consentire agli utenti di sfruttarla al meglio.
 
 \begin{figure}[H]
