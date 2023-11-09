@@ -85,8 +85,7 @@ libreria a disposizione)
 %
 \subsection{Interrogazioni al Database}
 Inizialmente, le interrogazioni al database erano state sviluppate attraverso
-\href{https://learn.microsoft.com/it-it/sql/relational-databases/stored-procedures/stored-procedures-database-engine?view=sql-server-ver16}{stored
-	procedure}.\ Tra i numerosi vantaggi proposti, l'idea principale era ottenere:
+stored procedure.\ Tra i numerosi vantaggi proposti, l'idea principale era ottenere:
 \begin{itemize}
 	\item Riutilizzo del codice;
 	\item Semplificazione della manutenzione;
@@ -94,7 +93,7 @@ Inizialmente, le interrogazioni al database erano state sviluppate attraverso
 \end{itemize}
 Tuttavia, durante lo sviluppo dell'applicativo, grazie al suggerimento di alcuni membri
 dell'azienda, si è preferito sostituire le procedure con interrogazioni dirette dal codice
-tramite il framework \href{https://learn.microsoft.com/it-it/azure/azure-sql/database/elastic-scale-working-with-dapper?view=azuresql}{Dapper}, al fine di poter migliorare:
+tramite il framework Dapper, al fine di poter migliorare:
 \begin{itemize}
 	\item Prestazioni in termini di tempo;
 	\item Semplificare il debugging del codice;
@@ -186,7 +185,6 @@ la query nella funzione denominata ``GetCourses'' presente all'interno del file 
 quando viene fornito l'ID dell'utente come input, ha lo scopo principale di recuperare e restituire 
 l'insieme completo dei corsi associati all'utente specificato.
 %
-%TODO: fixhere
 \begin{lstlisting}[style=cs_style, caption=esempio funzione per l'esecuzione di una query da codice tramite il framework Dapper]
 public List<CourseModel> GetCourses(string userid)
 {
@@ -210,7 +208,7 @@ public List<CourseModel> GetCourses(string userid)
 %
 Si osserva che ciascun utente può essere associato a più corsi, 
 stabilendo così una relazione uno a molti.\ Pertanto, è fondamentale 
-che il valore restituito dalla funzione sia di tipo \inlinecode{List\textless CourseModel \textgreater}, 
+che il valore restituito dalla funzione sia di tipo \inlinecode{List\textless CourseModel\textgreater}, 
 in quanto questa struttura dati può contenere più di un corso associato a 
 un utente specifico.\ Inoltre, grazie all'uso di Dapper, è possibile effettuare 
 un'interrogazione al database mediante una stringa appositamente creata 
@@ -230,7 +228,6 @@ per generare dati statistici in formato csv~\ref{fig:exportToExcel}, inerenti al
 termine dall'utente in questione.\ È essenziale sottolineare che questa funzionalità è rigorosamente riservata agli 
 utenti che detengono il privilegiato ruolo di ``Admin''.
 %
-% TODO: fix position
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=\textwidth]{img/exportToExcel.png}
@@ -303,7 +300,7 @@ presenti all'interno delle tabelle.\ Questa caratteristica permette agli utenti 
 specifiche esigenze e criteri di ricerca.
 \\
 Inoltre, per rendere l'esperienza ancora più interattiva e informativa, è stata inclusa una sezione di codice dedicata 
-direttamente all'interno della pagina stessa, utilizzando il tag \inlinecode{\textless\ script \textgreater\ \dots \textless\ /script \textgreater}. Questo approccio ha 
+direttamente all'interno della pagina stessa, utilizzando il tag \inlinecode{\textless script\textgreater\ \dots \textless /script\textgreater}. Questo approccio ha 
 consentito di incorporare efficacemente dei grafici che offrono una rappresentazione visiva dei dati statistici.\ 
 Questi grafici sono stati sviluppati in modo da offrire quattro diverse visualizzazioni, ognuna delle quali fornisce un'analisi 
 dettagliata dei dati statistici, permettendo agli utenti di comprendere meglio i pattern e le tendenze sottostanti.
@@ -373,10 +370,17 @@ durante il loro percorso nell'esperienza.\ Grazie a questa attenzione all'usabil
 è stato possibile assicurarsi che l'intera esperienza sia accessibile e fruibile in modo agevole 
 e soddisfacente per tutti i suoi utilizzatori.
 \\ \\
-%TODO: aggiungere l'info di quali linguaggi ho utilizzato per l'aggiunta di questa specifica integrazione
-% e magari mostrare la parte di codice se rilevante
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\linewidth]{img/UserView.png}
+	\caption{visualizzazione lato utente}
+	\label{fig:UserView}
+\end{figure}
+
 Un'aggiunta di notevole interesse dal punto di vista del layout è stata l'integrazione 
-della visualizzazione in sintassi Markdown.\ Questa nuova funzionalità mira a migliorare 
+della visualizzazione in sintassi Markdown (grazie all'utilizzo dei tag \inlinecode{\textless md-block\textgreater} e \inlinecode{\textless md-span\textgreater}).\
+Questa nuova funzionalità mira a migliorare 
 l'esperienza dell'utente durante la visualizzazione delle descrizioni delle informazioni 
 testuali presenti all'interno dei corsi.\ L'obiettivo è ottenere una visualizzazione che 
 favorisca una maggiore leggibilità delle informazioni e permetta l'integrazione di 
@@ -384,17 +388,25 @@ elementi come immagini, titoli, sottotitoli e molto altro all'interno delle desc
 dei task.\ Questo offre maggiore flessibilità e personalizzazione agli amministratori 
 incaricati della creazione dei corsi.
 
+
+% \begin{figure}[H]
+% 	\centering
+% 	\begin{subfigure}{0.3\textwidth}
+% 		\includegraphics[width=\textwidth]{img/markdown_p1.png}
+% 		\caption{scrittura in Markdown}
+% 	\end{subfigure}%
+% 	\begin{subfigure}{0.3\textwidth}
+% 		\includegraphics[width=\textwidth]{img/markdown_pt2.png}
+% 		\caption{visualizzazione in Markdown}
+% 	\end{subfigure}
+% 	\caption{esempio di scrittura e visualizzazione in Markdown}
+% 	\label{fig:markdown}
+% \end{figure}
+
 \begin{figure}[H]
 	\centering
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{img/markdown_p1.png}
-		\caption{scrittura in Markdown}
-	\end{subfigure}%
-	\begin{subfigure}{0.3\textwidth}
-		\includegraphics[width=\textwidth]{img/markdown_pt2.png}
-		\caption{visualizzazione in Markdown}
-	\end{subfigure}
-	\caption{esempio di scrittura e visualizzazione in Markdown}
+	\includegraphics[width=0.9\textwidth]{img/markdown_pt2.png}
+	\caption{esempio di visualizzazione in Markdown}
 	\label{fig:markdown}
 \end{figure}
 
@@ -404,7 +416,7 @@ al fine di consentire agli utenti di sfruttarla al meglio.
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/markdownGuide.png}
+	\includegraphics[width=0.9\textwidth]{img/markdownGuide1.png}
 	\caption{guida basilare al Markdown}
 	\label{fig:markdownGuide}
 \end{figure}
